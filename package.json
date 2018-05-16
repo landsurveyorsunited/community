@@ -1,0 +1,26 @@
+{
+  "name": "bs4starter",
+  "version": "1.0.0",
+  "description": "Bootstrap 4 starter KIT ",
+  "main": "index.js",
+  "scripts": {
+    "start": "gulp"
+  },
+  "author": "Bootstraptor",
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap": "4.0.0",
+    "font-awesome": "^4.7.0",
+    "material-design-icons": "^3.0.1",
+    "jquery": "^3.2.1",
+    "popper.js": "^1.12.3"
+  },
+  "devDependencies": {
+    "animate-sass": "^0.6.6",
+    "browser-sync": "^2.18.13",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^3.1.0",
+    "node-sass": "^4.5.3",
+    "gulp-html-beautify": "^1.0.1"
+  }
+}
