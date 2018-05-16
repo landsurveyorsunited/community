@@ -1,0 +1,407 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="icon" href="favicon.ico">
+  <!-- Bootstrap core CSS + Orange theme -->
+  <link rel="stylesheet" href="assets/css/theme/style.css">
+  <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+
+  <title>Cover Template for Bootstrap</title>
+
+
+  <!-- Custom styles for this template -->
+  <style>
+    /*
+ * Globals
+ */
+
+    /* Links */
+
+    a,
+    a:focus,
+    a:hover {
+      color: #fff;
+    }
+
+    /* Custom default button */
+
+    .btn-secondary,
+    .btn-secondary:hover,
+    .btn-secondary:focus {
+      color: #333;
+      text-shadow: none;
+      /* Prevent inheritance from `body` */
+      background-color: #fff;
+      border: .05rem solid #fff;
+    }
+
+    /*
+ * Base structure
+ */
+
+    html,
+    body {
+      height: 100%;
+      background-color: #333;
+	 
+    }
+
+    body {
+      color: #fff;
+      text-align: center;
+      text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
+    }
+
+    /* Extra markup and styles for table-esque vertical and horizontal centering */
+
+    .site-wrapper {
+      display: table;
+      width: 100%;
+      height: 100%;
+      /* For at least Firefox */
+      min-height: 100%;
+      box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
+    }
+
+    .site-wrapper-inner {
+      display: table-cell;
+      vertical-align: top;
+    }
+
+
+    .cover-container {
+      margin-right: auto;
+      margin-left: auto;
+	  position:relative;
+	  width:100%;
+	  height:100%;
+	  z-index: 100;
+    }
+
+    /* Padding for spacing */
+  
+	.inner {
+      /*padding: 2rem;*/
+    }
+
+    /*
+ * Header
+ */
+
+
+
+    .masthead-brand {
+      margin-bottom: 0;
+    }
+
+    .nav-masthead .nav-link {
+      padding: .25rem 0;
+      font-weight: 700;
+      color: rgba(255, 255, 255, .8);
+      background-color: transparent;
+      border-bottom: .25rem solid transparent;
+    }
+
+    .nav-masthead .nav-link:hover,
+    .nav-masthead .nav-link:focus {
+      border-bottom-color: rgba(255, 255, 255, .25);
+    }
+
+    .nav-masthead .nav-link+.nav-link {
+      margin-left: 1rem;
+    }
+
+    .nav-masthead .active {
+      color: #fff;
+      border-bottom-color: #fff;
+    }
+
+    @media (min-width: 48em) {
+      .masthead-brand {
+        float: left;
+      }
+      .nav-masthead {
+        float: right;
+      }
+    }
+
+
+
+    /*
+ * Footer
+ */
+
+    .mastfoot {
+      color: rgba(255, 255, 255, .5);
+    }
+
+    /*
+ * Affix and center
+ */
+
+    @media (min-width: 40em) {
+      /* Pull out the header and footer */
+      .masthead {
+        position: fixed;
+        top: 0;
+      }
+      .mastfoot {
+        position: fixed;
+        bottom: 0;
+      }
+      /* Start the vertical centering */
+      .site-wrapper-inner {
+        vertical-align: middle;
+      }
+      /* Handle the widths */
+      .masthead,
+      .mastfoot,
+      .cover-container {
+        width: 100%;
+        /* Must be percentage or pixels for horizontal alignment */
+      }
+    }
+
+    @media (min-width: 62em) {
+      .masthead,
+      .mastfoot,
+      .cover-container {
+        width: 42rem;
+      }
+	  .hidden{
+		display:none !important;
+	  }
+	
+		
+		html,
+		body {
+		  overflow: hidden;
+		}
+	
+    }
+	
+	.relative{
+		position:relative;
+	
+	}
+	
+	/* VIDEO COMPONENT */
+	
+.homepage-hero-module {
+    border-right: none;
+    border-left: none;
+    position: relative;
+
+}
+.homepage-hero-wrapper {
+	position:absolute;
+	top: 0;
+	left:0;
+	overflow:hidden;
+	width: 100%;
+    height: 100%;
+}
+.no-video .video-container video,
+.touch .video-container video {
+    display: none;
+}
+.no-video .video-container .poster,
+.touch .video-container .poster {
+    display: block !important;
+}
+.video-container {
+    position: relative;
+    background: #000;
+	height: 100%;
+    width: 100%;
+}
+.video-container .poster img {
+    width: 100%;
+    bottom: 0;
+    position: absolute;
+	position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
+.video-container .filter {
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: block;
+    top: 0;
+    left: 0;
+}
+.video-container video {
+    position: absolute;
+    z-index: 0;
+    bottom: 0;
+	left: 0;
+
+}
+.video-container video.fillWidth {
+    width: 100%;
+}
+
+.hidden {
+    display: block;
+}
+
+.poster{
+	display: block;
+    position: absolute;
+    width: 100%; 
+	height: 100%; 
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+}
+
+  </style>
+</head>
+
+<body>
+
+  <div class="site-wrapper p-0 cover" style="">
+
+    <div class="site-wrapper-inner  cover">
+	
+	<!-- vodeo background -->
+
+	<div class="homepage-hero-module">
+	
+  
+			 <div class="homepage-hero-wrapper">
+			<div class="video-container">
+				    <div class="cover-container d-flex h-100 align-items-stretch">
+						<header class="masthead clearfix container ">
+						  <div class="inner w-100 d-flex justify-content-between">
+							<h3 class="masthead-brand">Cover</h3>
+							<nav class="nav nav-masthead d-flex justify-content-center justify-content-md-end">
+							  <a class="nav-link active" href="#">Home</a>
+							  <a class="nav-link" href="#">Features</a>
+							  <a class="nav-link" href="#">Contact</a>
+							</nav>
+						  </div>
+						</header>
+					<div role="main" class="d-flex-row align-content-end inner cover inner cover align-self-center pt-0">
+					  <h1 class="cover-heading mt-2 mb-2">Cover video</h1>
+					  <p class="lead mt-2 mb-2">Cover is a one-page template for building simple and beautiful home pages with background videos. Download, edit the text, and add your own background video to make it your own.</p>
+					  <p class="lead mb-2 align-bottom">
+						<a href="#" class="btn  btn-outline-light ">Learn more</a>
+					  </p>
+					</div>
+
+					<footer class="mastfoot fixed-bottom d-flex justify-content-center w-100">
+					  <div class="inner">
+						<p>Cover template for <a href="http://bootstraptor.com/">Bootstrap 4</a>, by <a href="https://twitter.com/bootstraptor">@bootstraptor</a>.</p>
+					  </div>
+					</footer>
+				 </div>
+				<div class="poster hidden">
+					<img src="assets/video/Into_the_Wild.jpg" alt="background image">
+				</div>
+				<video autoplay loop class="fillWidth d-none d-md-block d-lg-block">
+					<source src="assets/video/Into_the_Wild.mp4" type="video/mp4" />Your browser does not support the video tag. I suggest you upgrade your browser.
+					<source src="assets/video/Into_the_Wild.webm" type="video/webm" />Your browser does not support the video tag. I suggest you upgrade your browser.
+				</video>
+				
+				<div class="filter header-overlay-primary"></div>
+			</div>
+		</div>
+	
+	</div>
+
+	<!-- /.vodeo background -->
+
+
+    </div>
+
+  </div>
+
+  <!-- Bootstrap core JavaScript
+    ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <!-- jQuery is required -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+  
+  <!-- COVERR VIDEO SCRIPT coverr.co -->
+  
+  <script>
+		//jQuery is required to run this code
+		$( document ).ready(function() {
+
+			scaleVideoContainer();
+
+			//initBannerVideoSize('.video-container .poster img');
+			initBannerVideoSize('.video-container .filter');
+			initBannerVideoSize('.video-container video');
+
+			$(window).on('resize', function() {
+				scaleVideoContainer();
+				//scaleBannerVideoSize('.video-container .poster img');
+				scaleBannerVideoSize('.video-container .filter');
+				scaleBannerVideoSize('.video-container video');
+			});
+
+		});
+
+		function scaleVideoContainer() {
+
+			var height = $(window).height() + 5;
+			var unitHeight = parseInt(height) + 'px';
+			$('.homepage-hero-module').css('height',unitHeight);
+
+		}
+
+		function initBannerVideoSize(element){
+
+			$(element).each(function(){
+				$(this).data('height', $(this).height());
+				$(this).data('width', $(this).width());
+			});
+
+			scaleBannerVideoSize(element);
+
+		}
+
+		function scaleBannerVideoSize(element){
+
+			var windowWidth = $(window).width(),
+			windowHeight = $(window).height() + 5,
+			videoWidth,
+			videoHeight;
+
+			// console.log(windowHeight);
+
+			$(element).each(function(){
+				var videoAspectRatio = $(this).data('height')/$(this).data('width');
+
+				$(this).width(windowWidth);
+
+				if(windowWidth < 1000){
+					videoHeight = windowHeight;
+					videoWidth = videoHeight / videoAspectRatio;
+					$(this).css({'margin-top' : 0, 'margin-left' : -(videoWidth - windowWidth) / 2 + 'px'});
+
+					$(this).width(videoWidth).height(videoHeight);
+				}
+
+				$('.homepage-hero-module .video-container video').addClass('fadeIn animated');
+
+			});
+		}
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,1040 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="the Easiest Way to Start Web Projects with the Bootstrap 4!">
+  <meta name="author" content="">
+  <link rel="icon" href="favicon.ico">
+  <!-- Bootstrap core CSS + Orange theme -->
+  <link rel="stylesheet" href="assets/css/optimized/style.css">
+  <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+	  <link rel="stylesheet" href="assets/css/optimized/demo.css">
+  <title>Bootstrap 4 Starter KIT</title>
+
+  <!-- Bootstrap core CSS -->
+
+  <style>
+    .album {
+      min-height: 50rem;
+      padding-top: 3rem;
+      padding-bottom: 3rem;
+    }
+
+    .album .card {
+      float: left;
+      width: 33.333%;
+      padding: .75rem;
+      margin-bottom: 2rem;
+      border: 0;
+    }
+	.gallery-wrapper {
+	  overflow: hidden;
+	}
+
+	.grid-item {
+	  padding-bottom: 3rem;
+	}
+
+	.sidebar {
+	  text-align: center;
+	  padding: 1rem;
+	  background: red;
+	  height: 900px;
+	}
+	.grid-item-content   {
+		overflow:hidden;
+		max-height:450px;
+	}
+	
+	.float {
+  -webkit-transition:all .3s ease-out;
+  -moz-transition:all .3s ease-out;
+  -ms-transition:all .3s ease-out;
+  -o-transition:all .3s ease-out;
+  transition:all .3s ease-out;
+}
+
+.float:hover {
+  -webkit-transform:translate(0px,-10px);
+  -moz-transform:translate(0px,-10px);
+  -ms-transform:translate(0px,-10px);
+  -o-transform:translate(0px,-10px);
+  transform:translate(0px,-10px);
+}
+.ov-hidden{
+	overflow:hidden;
+}
+
+.transition-color {
+  -webkit-transition:all .3s ease-out;
+  -moz-transition:all .3s ease-out;
+  -ms-transition:all .3s ease-out;
+  -o-transition:all .3s ease-out;
+  transition:all .3s ease-out;
+}
+
+.spinner {
+  margin: 100px auto 0;
+  width: 70px;
+  text-align: center;
+}
+
+.spinner > div {
+  width: 18px;
+  height: 18px;
+  background-color: #f83600;
+
+  border-radius: 100%;
+  display: inline-block;
+  -webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+  animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+}
+
+.spinner .bounce1 {
+  -webkit-animation-delay: -0.32s;
+  animation-delay: -0.32s;
+}
+
+.spinner .bounce2 {
+  -webkit-animation-delay: -0.16s;
+  animation-delay: -0.16s;
+}
+
+@-webkit-keyframes sk-bouncedelay {
+  0%, 80%, 100% { -webkit-transform: scale(0) }
+  40% { -webkit-transform: scale(1.0) }
+}
+
+@keyframes sk-bouncedelay {
+  0%, 80%, 100% { 
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  } 40% { 
+    -webkit-transform: scale(1.0);
+    transform: scale(1.0);
+  }
+}
+.card-img-overlay {
+    background: rgba(77, 77, 77, 0.5);
+}
+
+.logos img{
+	-webkit-filter: grayscale(60%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+	-webkit-transition:all .3s ease-out;
+  -moz-transition:all .3s ease-out;
+  -ms-transition:all .3s ease-out;
+  -o-transition:all .3s ease-out;
+  transition:all .3s ease-out;
+}
+.logos img:hover {
+    -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(0%);
+}
+a.card{
+	cursor:pointer;
+	text-shadow:1px 1px 2px #000;
+}
+.lh-1{
+	line-height:1.1em !important;	
+}
+
+.badge-pro{
+		position: relative;
+}
+.badge-pro:before{
+	width:1px;
+	height:1px;
+	box-shadow: 3px 3px 3px 3px rgba(255,255,255, .4);
+	position:absolute;
+	right:0;
+	top:0;
+}
+
+.close {
+    float: right;
+    font-size: 3.5rem;
+    color: #fff;
+    text-shadow: 0 1px 0 #FFF;
+    opacity: .5;
+    position: fixed;
+    bottom: -40px;
+    margin-left: 43%;
+}
+
+.modal-body {
+    position: relative;
+    flex: 1 1 auto;
+    padding: 1rem;
+    min-height: calc(100vh - 180px);
+}
+  </style>
+
+</head>
+
+<body>
+
+
+<header  class="target-hover sticky-top">
+    <div class="container-fluid">
+      <nav id="TopNav" class="navbar navbar-light bg-white navbar-expand-md no-gutters ">
+        <div class="col-5 col-md-2 text-left">
+          <a href="#" class="text-dark">
+           Starter Kit <span class="badge badge-danger"> PRO</span> 
+          </a>
+        </div>
+
+        <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarNav4" aria-controls="navbarNav4" aria-expanded="false" aria-label="Toggle navigation" style="">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-center col-md-8" id="navbarNav4">
+          <ul class="navbar-nav justify-content-center text-center">
+            <li class="nav-item active">
+              <a class="nav-link scroll active" href="#top">See Video<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link scroll" href="#section-1">Templates</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link scroll" href="#section-3">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link scroll" href="#section-2">Features</a>
+            </li> 
+			 
+		 
+          </ul>
+        </div>
+
+        <ul class="navbar-nav col-2 justify-content-end d-none d-md-flex">
+		<li class="nav-item">
+				<img title="" alt="image" style="max-width:30px" class="  rounded img-fluid ml-2" src="assets/images/logos/icon-html-5.jpg" data-toggle="tooltip" data-placement="top" data-original-title="HTML5">
+				
+			</li>	
+			<li class="nav-item">
+				<img alt="image" style="max-width:30px" class="  rounded 	img-fluid ml-2" src="assets/images/logos/icon-bootstrap.jpg" data-toggle="tooltip" data-placement="top" title="" data-original-title="Bootstrap 4">
+			</li>	
+			<li class="nav-item">
+				<img alt="image" style="max-width:30px" class=" rounded img-fluid ml-2" src="assets/images/logos/icon-sass.jpg" data-toggle="tooltip" data-placement="top" title="" data-original-title="Built with Sass">
+			 </li>		
+          <li class="nav-item">
+            <a class="btn btn-danger  ml-md-3 scroll btn-rounded" href="#price" ><span data-toggle="tooltip" data-placement="top" title="" data-original-title="$9 today, $49 tomorrow">Grab the Deal Now!</span></a>
+			 
+          </li>
+         
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main role="main">
+	
+<section id="top" class="pt-2 pb-1 mt-0 pb-0 align-items-center justify-content-between d-flex bg-white ">
+   <div class="container">
+      <div class="row  d-md-flex align-items-center ">
+       	<div class="col-12">
+		<!--	<h1 class="display-4	 text-center mt-2 mb-1 ">
+				<strong>  <i>
+				 
+				
+				Make 
+				<strong>Twitter Bootstrap 4</strong> 
+				websites and MVPs 
+			in a breeze!</i></strong> 
+			</h1>-->
+			
+				<h1 class="display-5 text-center mt-3 mb-1 pb-3 ">
+				 
+				 <strong>
+				<i>
+			 Never start Bootstrap from scratch again, with this you'll make
+				Websites  
+			<strong class="text-danger"> in a breeze!</i> </strong>   </strong> 	
+			</h1>
+			  
+		</div>
+		
+	
+			<div class="col-12 col-md-6	  order-md-2 order-sm-1 ">
+			<a class="card  bg-dark text-light  border-light animated mt-md-5  mt-sm-4 p-0" data-toggle="modal" data-target="#videoModal" data-thevideo="https://youtu.be/FROPGJe14c8">
+           <!-- <img class="card-img" src="assets/images/screenshots/ads/starter-kit-pro-white.jpg" alt="Card image">-->
+            <!--<img class="card-img" src="assets/images/screenshots/gifs/200w_d.gif" alt="Card image"> -->
+			<iframe src="https://giphy.com/embed/8Ttxq2Vu8nuTO45yNl" width="540" height="300" frameBorder="0" class="giphy-embed" allowFullScreen></iframe> 
+            <div class="card-img-overlay p-1 d-flex  flex-column  align-items-baseline justify-content-center ">
+                
+               <div class="container-fluid    text-center">
+                  <div class="row">
+                     <div class="col-12">
+                        <i class="far fa-play-circle fa-6x text-blue"></i>
+						<h3 class="display-5 mb-0"><strong>SEE THE VIDEO</strong></h3>
+						<p class="mt-0">In just a 60 seconds see what included!</p>
+                        
+                     </div>
+                  </div>
+               </div>
+               
+            </div>
+         </a>
+        </div>
+			 <div class="col-12 col-md-6  text-center text-sm-left">		
+		
+            <h1 class=" display-2   mb-4 mt-md-2 mt-sm-1 pt-sm-2  lh-1"><strong>Bootstrap 4 Starter Kit  <small><span class="badge badge-danger badge-pro bg-gradient-red">PRO</span></small> </strong> </h1>
+            <p class="  mt-4  mb-3 lead"><strong>50+ most on-demanded Bootstrap templates your startup <del>ever</del> <span class="text-danger"><i>always NEED!</i></span></p>
+				 </strong>
+              </p>
+              <p class="mt-sm-4">
+			 
+			     <a class=" btn btn-link mt-md-3 mb-3 mr-md-3 scroll velocity-animating text-info" href="#section-1">[ Show Me them on the table! ]</a> 
+			  
+			  <a class="btn   text-light bg-gradient-light-green btn-lg btn-raised  btn-round m-shadow-16 mt-md-3 mb-3 scroll velocity-animating" href="#price"> TAKE MY MONEY!</a> 
+			   
+			 	 
+			  </p>
+			  
+        </div>
+	
+	
+      </div>
+    </div>
+    </section>
+	
+<section class="pt-3 pb-0 mt-2 mb-3   ">
+      <div class="container">
+        <div class="row ">
+		
+			<div class="col-md-6 logos d-md-flex justify-content-center text-center text-md-left">
+				<blockquote><p style="line-height: 1.1em !important;"> <strong><i>''Time is money in this business, If you want to get moving faster, you need to check out the Bootstrap Starter KIT by Bootstraptor.com''</i></strong> <cite><small>- WebDesignerDepot.com</small></cite> </p><blockquote>
+			</div>
+			<div class="col-md-6 logos d-md-flex justify-content-center text-center">
+				
+				<img title="" alt="image" style="max-height:45px" class="  p-1  rounded img-fluid m-2" src="assets/images/logos/inspiretrends.jpg" data-toggle="tooltip" data-placement="top" data-original-title="If you think that Bootstrap templates are not enough for you, you should go with Bootstraptor.  - inspiretrends.com">
+				
+				
+				<img alt="image" style="max-height:45px" class="  p-1 rounded img-fluid m-2" src="assets/images/logos/wbd.jpg" data-toggle="tooltip" data-placement="top" title="" data-original-title="...The Starter Kit from Bootstraptor the easiest way to start building projects with Twitter Bootstrap  - WebDesignerDepot.com">
+				<img alt="image" style="max-height:45px" class="  p-1 rounded img-fluid m-2" src="assets/images/logos/99designs.jpg" data-toggle="tooltip" data-placement="top" title="" data-original-title="… Awesome – thanks for the resource. They look great! - @99designs">
+				<img alt="image" style="max-height:45px" class="  p-1 rounded img-fluid m-2" src="assets/images/logos/habrahabr.gif" data-toggle="tooltip" data-placement="top" title="" data-original-title="Bootstraptor.com – a selection of a large number of Bootstrap templates including Starter Kit… - habrahabr.ru">
+				<img alt="image" style="max-height:45px" class="  p-1 rounded img-fluid m-2" src="assets/images/logos/mattermark.png" data-toggle="tooltip" data-placement="top" title="" data-original-title="Have you heard about @bootstraptor yet? They are blowing up, with tools for web development with Bootstrap - @mattermark">
+				<img alt="image" style="max-height:45px" class="  p-1 rounded img-fluid m-2" src="assets/images/logos/Venture-Beat.png" data-toggle="tooltip" data-placement="top" title="" data-original-title="#2 of the top 10 front-end software development tools... - VentureBeat.com">
+				<img alt="image" style="max-height:45px" class=" 	 p-1 rounded bg-white	img-fluid m-2 p-1" src="assets/images/logos/producthunt.png" data-toggle="tooltip" data-placement="top" title="" data-original-title="Be the first who'll Hunt this project!">
+			 		
+			</div>
+		</div>	
+      </div>
+      
+    </section>
+	
+	 <div class="container-fluid" id="section-1">
+			 	 <div class="row mt-0 mb-5  justify-content-center  d-flex">
+	 <div class="col-12 col-md-2 text-center d-none d-md-block  bg-light">
+	  <h3 class=" display-4 text-center  mt-3 mb-2">CATEGORIES</h3>
+	  
+	 
+		 <ul class="mt-2 nav nav-pills nav-pills-white filter-button-group justify-content-center  d-flex" role="tablist justify-content-center  d-flex">  
+		  <button class="nav-link active btn btn-white  btn-block btn-round btn-rised m-1" data-filter="*">Show all</button>
+		  <button class="nav-link btn btn-white  btn-lg btn-block btn-round btn-rised m-1" data-filter=".about">About (2)</button>
+		  <button class="nav-link btn btn-white  btn-lg  btn-block btn-round btn-rised m-1" data-filter=".blog">Blog (5)</button>
+		  <button class="nav-link btn btn-white  btn-lg   btn-block btn-round btn-rised m-1" data-filter=".business">Business (8)</button>
+		  <button class="nav-link btn btn-white  btn-lg  btn-block  btn-round btn-rised m-1" data-filter=".contact">Contact (2)</button>
+		  <button class="nav-link btn btn-white  btn-lg  btn-block btn-round btn-rised m-1" data-filter=".cover">Cover (4)</button>
+		  <button class="nav-link btn btn-white  btn-lg  btn-block btn-round btn-rised m-1" data-filter=".parallax">Parallax (1)</button>
+		  <button class="nav-link btn btn-white  btn-lg btn-block  btn-round btn-rised m-1" data-filter=".dashboard">Dashboard (3)</button>
+		  <button class="nav-link btn btn-white  btn-lg btn-block btn-round btn-rised m-1" data-filter=".landing">Landing (14)</button>
+		  <button class="nav-link btn btn-white btn-lg  btn-block btn-round btn-rised m-1" data-filter=".project">Project (5)</button>
+		  <button class="nav-link btn btn-white  btn-lg  btn-block btn-round btn-rised m-1" data-filter=".ecommerce">Ecommerce  (6)</button>
+		  <button class="nav-link btn btn-white  btn-lg btn-block btn-round btn-rised m-1" data-filter=".masonry">Masonry (2)</button>
+		  <button class="nav-link btn btn-white   btn-lg btn-block btn-round btn-rised m-1" data-filter=".carousel">Carousel (3)</button>
+		  <button class="nav-link btn btn-white  btn-lg  btn-block  btn-round btn-rised m-1" data-filter=".video">Video (1)</button>
+		  <button class="nav-link btn btn-white  btn-lg  btn-block btn-round btn-rised m-1" data-filter=".cards">Cards (1+)</button>
+		  <button class="nav-link btn btn-white  btn-lg btn-block btn-round btn-rised m-1" data-filter=".pricing">Pricing (1+)</button>
+		</ul>
+	</div>
+	<div class="col-12 col-md-10 text-center">
+    <div class="album mt-0  ">
+	 <div class="spinner">
+		  <div class="bounce1"></div>
+		  <div class="bounce2"></div>
+		  <div class="bounce3"></div>
+		</div>
+  <div id="container-images" class="container-fluid">
+  <!-- add extra container element for Masonry -->
+  <div class="grid">
+    <!-- add sizing element for columnWidth -->
+    <div class="grid-sizer col-sm-4 col-md-4"></div>
+    <!-- items use Bootstrap .col- classes -->
+	
+	
+	<div class="grid-item  col-md-4   dashboard" data-category="dashboard">
+      <div class="grid-item-content   m-shadow-32"> 
+	   <a href="dashboard2.html" target="_blank">
+		<img class="img-fluid rounded  " src="assets/images/screenshots/jpg/_dashboard.jpg">
+		</a>
+		</div>
+    </div> 
+	<div class="grid-item  col-md-4   dashboard" data-category="dashboard">
+      <div class="grid-item-content   m-shadow-32"> 
+	   <a href="dashboard4.html" target="_blank">
+		<img class="img-fluid rounded  " src="assets/images/screenshots/jpg/dashboard4.jpg">
+		</a>
+		</div>
+    </div> 
+	
+	<div class="grid-item  col-md-4   dashboard" data-category="dashboard">
+      <div class="grid-item-content   m-shadow-32"> 
+	   <a href="dashboard3.html" target="_blank">
+		<img class="img-fluid rounded  " src="assets/images/screenshots/jpg/dashboard3.jpg">
+		</a>
+		</div>
+    </div> 
+ 
+	<div class="grid-item  col-md-4  landing" data-category="landing">
+      <div class="grid-item-content   m-shadow-32"> 
+	   <a href="lp-img-right.html" target="_blank">
+		<img class="img-fluid rounded  " src="assets/images/screenshots/jpg/lp-img-right.jpg"></a></div>
+    </div> 	
+	
+
+		<div class="grid-item  col-md-4   parallax" data-category="parallax">
+      <div class="grid-item-content   m-shadow-32"> 
+	   <a href="landing-scroller-parallax.html" target="_blank">
+		<img class="img-fluid rounded  " src="assets/images/screenshots/jpg/bootstrap-parallax.jpg">
+		</a>
+		</div>
+    </div>
+	<div class="grid-item  col-md-4  business" data-category="business">
+      <div class="grid-item-content   m-shadow-32"> 
+	   <a href="landing-img-bg-right.html" target="_blank">
+		<img class="img-fluid rounded  " src="assets/images/screenshots/jpg/anding-img-bg-right.jpg"></a></div>
+    </div> 
+
+	<div class="grid-item  col-md-4    landing" data-category="landing">
+      <div class="grid-item-content   m-shadow-32"> 
+	     <a href="landing.html" target="_blank">
+		<img class="img-fluid rounded  " src="assets/images/screenshots/jpg/_landing.jpg"></a></div>
+    </div> 	
+	<div class="grid-item  col-md-4    landing" data-category="landing">
+      <div class="grid-item-content   m-shadow-32"> 
+	     <a href="saas.html" target="_blank">
+		<img class="img-fluid rounded  " src="assets/images/screenshots/jpg/_platform.jpg"></a></div>
+    </div> 	
+	<div class="grid-item  col-md-4    landing" data-category="landing">
+      <div class="grid-item-content   m-shadow-32"> 
+	   <a href="saas-demo.html" target="_blank">
+		<img class="img-fluid rounded  " src="assets/images/screenshots/jpg/_platform2.jpg"></a></div>
+    </div>    
+	 <div class="grid-item  col-md-4    landing" data-category="landing">
+      <div class="grid-item-content   m-shadow-32"> 
+	   <a href="landing-page-multi-items.html" target="_blank">
+		<img class="img-fluid rounded  " src="assets/images/screenshots/jpg/landing-page-multi.jpg">
+		</div>
+    </div>    
+
+	<div class="grid-item  col-md-4    landing" data-category="landing">
+      <div class="grid-item-content   m-shadow-32"> 
+	   <a href="lp-img-right-orange.html" target="_blank">
+		<img class="img-fluid rounded  " src="assets/images/screenshots/jpg/lp-img-right-orange.jpg">
+		</div>
+    </div>
+	<div class="grid-item  col-md-4    landing" data-category="landing">
+      <div class="grid-item-content   m-shadow-32"> 
+	   <a href="lp-devices-center-bottom.html" target="_blank">
+		<img class="img-fluid rounded  " src="assets/images/screenshots/jpg/lp-devices-center-bottom.jpg">
+		</div>
+    </div>   
+	<div class="grid-item  col-md-4    landing" data-category="landing">
+      <div class="grid-item-content   m-shadow-32"> 
+	   <a href="lp-device-center3.html" target="_blank">
+		<img class="img-fluid rounded  " src="assets/images/screenshots/jpg/lp-device-center3.jpg">
+		</div>
+    </div>    
+	 	<div class="grid-item  col-md-4    landing" data-category="landing">
+      <div class="grid-item-content   m-shadow-32"> 
+	   <a href="lp-device-center2.html" target="_blank">
+		<img class="img-fluid rounded  " src="assets/images/screenshots/jpg/lp-device-center2.jpg">
+		</div>
+    </div>    	
+	<div class="grid-item  col-md-4    landing" data-category="landing">
+      <div class="grid-item-content   m-shadow-32"> 
+	   <a href="lp-img-left2.html" target="_blank">
+		<img class="img-fluid rounded  " src="assets/images/screenshots/jpg/lp-img-left2.jpg">
+		</div>
+    </div>    
+	 <div class="grid-item  col-md-4    landing" data-category="landing">
+      <div class="grid-item-content   m-shadow-32"> 
+	   <a href="landing-Starter Kit.html" target="_blank">
+		<img class="img-fluid rounded  " src="assets/images/screenshots/jpg/landing-Starter Kit.jpg">
+		</div>
+    </div>    
+	 
+		
+	
+	
+    <div class="grid-item col-sm-8 col-md-4 about" data-category="about">
+      <!-- wrap item content in its own element -->
+      <div class="grid-item-content   m-shadow-32">
+	  <a href="aboutme.html" target="_blank">
+		<img class="img-fluid rounded " src="assets/images/screenshots/jpg/_aboutme.jpg"></a></div>
+    </div>
+    <div class="grid-item  col-md-4  about" data-category="about">
+      <div class="grid-item-content   m-shadow-32"> 
+	  <a href="aboutus.html" target="_blank">
+		<img class="img-fluid rounded  " src="assets/images/screenshots/jpg/_aboutus.jpg"></a></div>
+    </div> 
+	<div class="grid-item  col-md-4  blog" data-category="blog">
+      <div class="grid-item-content   m-shadow-32"> 
+	  <a href="blog-1col.html" target="_blank">
+		<img class="img-fluid rounded  " src="assets/images/screenshots/jpg/_blog-1col.jpg"></a></div>
+    </div> 
+	
+	 
+	<div class="grid-item  col-md-4  blog" data-category="blog">
+      <div class="grid-item-content   m-shadow-32"> 
+	   <a href="blog-1col2var.html" target="_blank">
+		<img class="img-fluid rounded  " src="assets/images/screenshots/jpg/_blog-1col2var.jpg"></a></div>
+    </div> 	
+	<div class="grid-item  col-md-4  blog" data-category="blog">
+      <div class="grid-item-content   m-shadow-32"> 
+	   <a href="blog-1col6var.html" target="_blank">
+		<img class="img-fluid rounded  " src="assets/images/screenshots/jpg/blog-1col6var.jpg"></a></div>
+    </div> 
+	<div class="grid-item  col-md-4  blog" data-category="blog">
+      <div class="grid-item-content   m-shadow-32"> 
+	   <a href="blog-1col5var.html" target="_blank">
+		<img class="img-fluid rounded  " src="assets/images/screenshots/jpg/blog-1col5var.jpg"></a></div>
+    </div> 
+	<div class="grid-item  col-md-4  blog" data-category="blog">
+      <div class="grid-item-content   m-shadow-32"> 
+	     <a href="blog-1col4var.html" target="_blank">
+		<img class="img-fluid rounded  " src="assets/images/screenshots/jpg/_blog-1col4var.jpg"></a></div>
+    </div> 
+	<div class="grid-item  col-md-4  business" data-category="business">
+      <div class="grid-item-content   m-shadow-32"> 
+	   <a href="landing-scroller-nomadlist2.html" target="_blank">
+		<img class="img-fluid rounded  " src="assets/images/screenshots/jpg/nomad-list-2.jpg"></a></div>
+    </div> 	
+		
+	<div class="grid-item  col-md-4  business" data-category="business">
+      <div class="grid-item-content   m-shadow-32"> 
+	   <a href="landing-scroller-nomadlist.html" target="_blank">
+		<img class="img-fluid rounded  " src="assets/images/screenshots/jpg/nomads-travel-list.jpg"></a></div>
+    </div>
+	<div class="grid-item  col-md-4  business" data-category="blog">
+      <div class="grid-item-content   m-shadow-32"> 
+	   <a href="business-page2.html" target="_blank">
+		<img class="img-fluid rounded  " src="assets/images/screenshots/jpg/_business_page-2.jpg"></a></div>
+    </div> 	
+	<div class="grid-item  col-md-4  business" data-category="business">
+      <div class="grid-item-content   m-shadow-32"> 
+	   <a href="landing-scroller-nomadlist3.html" target="_blank">
+		<img class="img-fluid rounded  " src="assets/images/screenshots/jpg/nomad-list-3.jpg"></a></div>
+    </div> 
+	 
+	<div class="grid-item  col-md-4  business" data-category="blog">
+      <div class="grid-item-content   m-shadow-32"> 
+	  <a href="business-page1.html" target="_blank">
+		<img class="img-fluid rounded  " src="assets/images/screenshots/jpg/_business_page-3.jpg"></a></div>
+    </div> 
+	<div class="grid-item  col-md-4  business" data-category="blog">
+      <div class="grid-item-content   m-shadow-32"> 
+	  <a href="business-page4-boxed.html" target="_blank">
+		<img class="img-fluid rounded  " src="assets/images/screenshots/jpg/_business_page-boxed.jpg"></a></div>
+    </div> 
+	<div class="grid-item  col-md-4  contact" data-category="contact">
+      <div class="grid-item-content   m-shadow-32"> 
+	  <a href="contact_us.html" target="_blank">
+		<img class="img-fluid rounded  " src="assets/images/screenshots/jpg/_contact_us.jpg"></a></div>
+    </div> 
+	<div class="grid-item  col-md-4  contact" data-category="contact">
+      <div class="grid-item-content   m-shadow-32"> 
+	  <a href="contact_us2.html" target="_blank">
+		<img class="img-fluid rounded  " src="assets/images/screenshots/jpg/_contact_us_map.jpg"></a></div>
+    </div> 
+	<div class="grid-item  col-md-4  cover" data-category="cover">
+      <div class="grid-item-content   m-shadow-32"> 
+	  <a href="cover-slides.html" target="_blank">
+		<img class="img-fluid rounded  " src="assets/images/screenshots/jpg/_cover.jpg"></a></div>
+    </div> 	
+	<div class="grid-item  col-md-4  cover" data-category="cover">
+      <div class="grid-item-content   m-shadow-32"> 
+	  <a href="cover-particles.html" target="_blank">
+		<img class="img-fluid rounded  " src="assets/images/screenshots/jpg/_cover_particles.jpg"></a></div>
+    </div> 
+	<div class="grid-item  col-md-4  cover" data-category="cover">
+      <div class="grid-item-content   m-shadow-32"> 
+	  <a href="cover2step.html" target="_blank">
+		<img class="img-fluid rounded  " src="assets/images/screenshots/jpg/_cover2step.jpg"></a></div>
+    </div>
+	
+	<div class="grid-item  col-md-4  cover" data-category="cover">
+      <div class="grid-item-content   m-shadow-32"> 
+	    <a href="cover-404.html" target="_blank">
+		<img class="img-fluid rounded  " src="assets/images/screenshots/jpg/_cover3.jpg"></a></div>
+    </div> 
+	
+	<div class="grid-item  col-md-4    landing" data-category="landing">
+      <div class="grid-item-content   m-shadow-32"> 
+	    <a href="landing-scroller.html" target="_blank">
+		<img class="img-fluid rounded  " src="assets/images/screenshots/jpg/SpyScroller.jpg"></a></div>
+    </div> 
+	
+	<div class="grid-item  col-md-4    landing" data-category="landing">
+      <div class="grid-item-content   m-shadow-32"> 
+	  <a href="crypto-landing.html" target="_blank">
+		<img class="img-fluid rounded  " src="assets/images/screenshots/jpg/crypto.jpg">
+	</a>
+		</div>
+    </div> 
+	<div class="grid-item  col-md-4    business" data-category="business">
+      <div class="grid-item-content   m-shadow-32"> 
+	    <a href="marketing.html" target="_blank">
+		<img class="img-fluid rounded  " src="assets/images/screenshots/jpg/_marketing.jpg"></a></div>
+    </div> 
+	
+
+	<div class="grid-item  col-md-4   project" data-category="project">
+      <div class="grid-item-content   m-shadow-32"> 
+	  <a href="projects-1col.html" target="_blank">
+		<img class="img-fluid rounded  " src="assets/images/screenshots/jpg/_projects-1col.jpg"></a></div>
+    </div>
+	<div class="grid-item  col-md-4   project" data-category="project">
+      <div class="grid-item-content   m-shadow-32"> 
+	  <a href="projects-2col.html" target="_blank">
+		<img class="img-fluid rounded  " src="assets/images/screenshots/jpg/_projects-2col.jpg"></a></div>
+    </div> 	
+	<div class="grid-item  col-md-4   project" data-category="project">
+      <div class="grid-item-content   m-shadow-32"> 
+	  <a href="projects-3col.html" target="_blank">
+		<img class="img-fluid rounded  " src="assets/images/screenshots/jpg/_projects-3col.jpg"></a></div>
+    </div> 	
+	<div class="grid-item  col-md-4   project" data-category="project">
+      <div class="grid-item-content   m-shadow-32"> 
+	  <a href="project-4col.html" target="_blank">
+		<img class="img-fluid rounded  " src="assets/images/screenshots/jpg/_projects-4col.jpg"></a></div>
+    </div> 
+	<div class="grid-item  col-md-4   project" data-category="project">
+      <div class="grid-item-content   m-shadow-32"> 
+	  <a href="project-4col-fluid.html" target="_blank">
+		<img class="img-fluid rounded  " src="assets/images/screenshots/jpg/_projects-4col-fluid.jpg"></a></div>
+    </div> 
+	<div class="grid-item  col-md-4   landing" data-category="landing">
+      <div class="grid-item-content   m-shadow-32"> 
+	  <a href="squeeze.html" target="_blank">
+		<img class="img-fluid rounded  " src="assets/images/screenshots/jpg/_squeeze.jpg"></a></div>
+    </div> 
+	<div class="grid-item  col-md-4   ecommerce" data-category="ecommerce">
+      <div class="grid-item-content   m-shadow-32"> 
+	   <a href="shop.html" target="_blank">
+		<img class="img-fluid rounded  " src="assets/images/screenshots/jpg/shop.jpg"></a></div>
+    </div>
+	<div class="grid-item  col-md-4   ecommerce" data-category="ecommerce">
+      <div class="grid-item-content   m-shadow-32"> 
+	   <a href="shop-2.html" target="_blank">
+		<img class="img-fluid rounded  " src="assets/images/screenshots/jpg/shop-2.jpg"></a></div>
+    </div> 
+	<div class="grid-item  col-md-4   ecommerce" data-category="ecommerce">
+      <div class="grid-item-content   m-shadow-32"> 
+	   <a href="store.html" target="_blank">
+		<img class="img-fluid rounded  " src="assets/images/screenshots/jpg/_store_1.jpg"></a></div>
+    </div> 	
+	<div class="grid-item  col-md-4   ecommerce" data-category="ecommerce">
+      <div class="grid-item-content   m-shadow-32"> 
+	   <a href="checkout.html" target="_blank">
+		<img class="img-fluid rounded  " src="assets/images/screenshots/jpg/checkout.jpg"></a></div>
+    </div> 
+	<div class="grid-item  col-md-4   ecommerce" data-category="ecommerce">
+      <div class="grid-item-content   m-shadow-32"> 
+	   <a href="store-r.html" target="_blank">
+		<img class="img-fluid rounded  " src="assets/images/screenshots/jpg/_store_2.jpg"></a></div>
+    </div>
+	<div class="grid-item  col-md-4   ecommerce" data-category="ecommerce">
+      <div class="grid-item-content   m-shadow-32"> 
+	  
+	   <a href="shop3.html" target="_blank">
+		<img class="img-fluid rounded  " src="assets/images/screenshots/jpg/shop-3.jpg"></a></div>
+    </div>
+	<div class="grid-item  col-md-4   masonry" data-category="masonry">
+      <div class="grid-item-content   m-shadow-32"> 
+	  <a href="album-isotope.html" target="_blank">
+		<img class="img-fluid rounded  " src="assets/images/screenshots/jpg/isotope_filter.jpg"></a></div>
+    </div> 
+	<div class="grid-item  col-md-4   masonry" data-category="masonry">
+      <div class="grid-item-content   m-shadow-32"> 
+	   <a href="album-masonry.html" target="_blank">
+		<img class="img-fluid rounded  " src="assets/images/screenshots/jpg/masonry_images_grid.jpg"></a></div>
+    </div> 
+	<div class="grid-item  col-md-4   carousel" data-category="carousel">
+      <div class="grid-item-content   m-shadow-32"> 
+	  <a href="сarousel.html" target="_blank">
+		<img class="img-fluid rounded  " src="assets/images/screenshots/jpg/_carousel_bg.jpg"></a></div>
+    </div> 
+	
+	<div class="grid-item  col-md-4   carousel" data-category="carousel">
+      <div class="grid-item-content   m-shadow-32"> 
+	  <a href="carousel2.html" target="_blank">
+		<img class="img-fluid rounded  " src="assets/images/screenshots/jpg/_carousel.jpg"></a></div>
+    </div> 
+	 <div class="grid-item  col-md-4   carousel" data-category="carousel">
+      <div class="grid-item-content   m-shadow-32"> 
+	  <a href="сarousel3.html" target="_blank">
+		<img class="img-fluid rounded  " src="assets/images/screenshots/jpg/carousel3.jpg"></a></div>
+    </div> 
+	<div class="grid-item  col-md-4   video" data-category="video">
+      <div class="grid-item-content   m-shadow-32">  
+	  <a href="projects-2col-video.html" target="_blank">
+		<img class="img-fluid rounded  " src="assets/images/screenshots/jpg/video-2col.jpg"></a></div>
+    </div> 
+ 
+	<div class="grid-item  col-md-4   cards" data-category="cards">
+      <div class="grid-item-content   m-shadow-32"> 
+	  <a href="cards.html" target="_blank">
+		<img class="img-fluid rounded  " src="assets/images/screenshots/jpg/cards.jpg"></a></div>
+    </div> 
+	<div class="grid-item  col-md-4   pricing" data-category="pricing">
+      <div class="grid-item-content   m-shadow-32"> 
+	  <a href="pricing.html" target="_blank">
+		<img class="img-fluid rounded  " src="assets/images/screenshots/jpg/pricing.jpg"></a></div>
+    </div> 
+	<div class="grid-item  col-md-4  " data-category="*">
+	<!--<div class="grid-item  col-md-4   pricing video squeeze cover dashboard business contact landing carousel masonry video cards pricing blog about" data-category="*">-->
+      <div class="grid-item-content   m-shadow-32"> 
+	   
+		<img class="img-fluid rounded  " src="http://placehold.it/300x350/fff/eb3a26?text=REQUEST NEW TEMPLATE"> </div>
+    </div> 
+
+
+
+	 
+	 
+     
+  </div>
+</div>
+
+</div>
+</div>
+	</div>
+	</div> 
+  </div>
+</div>
+    </div>
+<section class="middle pt-3" id="section-3">
+
+			<div class="container">
+	 <div class="row mt-5 mb-5 justify-content-center  d-flex">
+	 <div class="col-md-5   ">
+	  <h3 class=" display-5 mt-5 text-center  text-danger"><strong>The Issue </strong></h3>
+		<p class="   ">
+						
+						 <span class=" ">One of the most popular frameworks is <a class="text-dark" href="http://getbootstrap.com/" target="_blank"> Twitter Bootstrap</a>, but unfortunately when they were packaging it for distribution, the guys over at Twitter didn’t include too many example files. But we all always need skeleton templates for our startups and websites! </p>	
+	 
+	</div> 
+	<div class="col-md-5	  ">
+	  
+		  <h3 class=" display-5 text-center  text-success mt-5"><strong>Time Saver</strong></h3>
+	<p class="    ">	
+	 If you want to get moving with Bootstrap faster you'll need more starter templates, in this Starter Kit  you'll find everything  you need to finish your site in time. Starter KIT - give you all bootstrap latest features plus much more templates to start with!
+					</p>
+	</div>
+		
+	</div>
+	</div>	
+
+
+		<div class="container" id="section-2">
+			<div class="row">
+			
+			<div class="col-xs-12 col-sm-22 col-md-7 col-lg-7 p-md-5  ">
+				<h2 class="display-5  mb-1">Starter KIT 	<strong><span class="badge badge-danger"> PRO </span></strong>   </h2>
+				<h2 class="display-3  "><strong>    <i>  Highlights </i></strong></h2>
+				<ul class="list-unstyled">
+<li> 
+<p>
+Most sites are made up of dozens of different templates, 
+you can find yourself trying to build out a number of new templates on the Bootstrap framework. 
+That's why this <strong>Bootstrap 4 Starter KIT </strong>is perfect: it offers all the killer Bootstrap functionality, but with a ton more templates to work with!
+</p>
+</li>
+
+
+<li><h3 class="display-5 mt-5"><strong>Save time with 50+ Extended Bootstrap Templates</strong></h3>
+<p>This Bootstrap 4 Starter KIT includes more than 50 professional templates to help you give your website the full Bootstrap effect! 
+From a contact page to a business blog to a standard 404 error page, this KIT has you covered. 
+</p>
+</li>
+
+
+<li><h3 class="display-5 mt-5">
+<strong>Do it better with Clean, Organized Code</strong></h3>
+<p>
+The beautiful thing about Bootstrap is that all code is clearly labeled and easy to follow. 
+That means it's easy to update as well. And all KIT templates included in this collection not only meet today's Web design standards, 
+but they're also a breeze to follow. No extraneous HTML classes or dirty layers of CSS styles. Only the default bootstrap 4 and some magic.
+</p>
+</li>
+<li><h3 class="display-5 mt-5">
+<strong>Make Bootstrap 4.0 themes easily (CSS+SASS+Gulp)</strong></h3>
+<p>In addition to all those useful Bootstrap templates, your purchase of this Deal includes 5 fabulous Bootstrap 4.0 themes color swatches to liven up the look of your site. Each theme features the necessary CSS and SASS code + Gulp file for advanced developers. The primary color in this templates based on one of the custom Bootstrap 4 themes. You can always change any color or choose from pre-styled Themes Collection.</a>.	</p>
+</li>
+				</ul>
+			</div>
+			
+			<div class="col-xs-12 col-sm-22 col-md-5 col-lg-5 p-md-5">
+				<hr>
+<blockquote >
+	<p><strong><i>If you think that Bootstrap templates are not enough for you, you should go with Bootstraptor. 
+		You will have a wide range to select from, which automatically gives you a lot of interesting things to work with.</strong></i>
+</p>		<cite><strong> <i class="fa fa-star text-warning" aria-hidden="true"></i> 
+					<i class="fa fa-star text-warning" aria-hidden="true"></i>
+					<i class="fa fa-star text-warning" aria-hidden="true"></i>
+					<i class="fa fa-star text-warning" aria-hidden="true"></i>
+					<i class="fa fa-star text-warning" aria-hidden="true"></i> - InspireTrends.com </strong></cite></blockquote>
+<hr>
+<blockquote>
+	<p><strong><i>For those who would like to have more templates than what’s just being offered with the bootstrap template sets, 
+	Bootstraptor brings you so much more..." </strong></i></p>		
+	<cite><strong> <i class="fa fa-star text-warning" aria-hidden="true"></i> 
+					<i class="fa fa-star text-warning" aria-hidden="true"></i>
+					<i class="fa fa-star text-warning" aria-hidden="true"></i>
+					<i class="fa fa-star text-warning" aria-hidden="true"></i>
+					<i class="fa fa-star text-warning" aria-hidden="true"></i> - SmashingHub.com</strong></cite></blockquote>
+	<hr>
+<blockquote>
+	<p><strong><i>Bootstraptor.com - a selection of a large number of premium Bootstrap templates including Starter Kit, 
+	based on the Bootstrap framework...</strong></i> </p>		
+	<cite><strong> <i class="fa fa-star text-warning" aria-hidden="true"></i> 
+					<i class="fa fa-star text-warning" aria-hidden="true"></i>
+					<i class="fa fa-star text-warning" aria-hidden="true"></i>
+					<i class="fa fa-star text-warning" aria-hidden="true"></i>
+					<i class="fa fa-star text-warning" aria-hidden="true"></i> - HabraHabr.ru</strong></cite></blockquote>
+	<hr>
+<blockquote>
+	<p><strong><i>... Awesome - thanks for the resource. They look great!</strong></i></p>		
+	<cite><strong><i class="fa fa-star text-warning" aria-hidden="true"></i> 
+					<i class="fa fa-star text-warning" aria-hidden="true"></i>
+					<i class="fa fa-star text-warning" aria-hidden="true"></i>
+					<i class="fa fa-star text-warning" aria-hidden="true"></i>
+					<i class="fa fa-star text-warning" aria-hidden="true"></i> - @99designs</strong></cite></blockquote>
+	<hr>
+<blockquote>
+	<p><strong><i>Have you heard about @bootstraptor yet? They are blowing up, with tools for web development with Bootstrap.</strong></i></p>		<cite><strong><i class="fa fa-star text-warning" aria-hidden="true"></i> 
+					<i class="fa fa-star text-warning" aria-hidden="true"></i>
+					<i class="fa fa-star text-warning" aria-hidden="true"></i>
+					<i class="fa fa-star text-warning" aria-hidden="true"></i>
+					<i class="fa fa-star text-warning" aria-hidden="true"></i> - @Mattermark </strong></cite></blockquote>
+
+	
+	</div>
+</div>
+</div>
+	<div class="container">
+	 <div class="row mt-3 mb-5 justify-content-center  d-flex">
+	 <div class="col-md-6   ">
+	  <h3 class=" display-5 mt-5 text-center  text-success"><strong>Good for Newbies</strong></h3>
+		<p class="   ">
+						
+						 <span class=""> Just replace the pictures and text and your website is ready. Change the stylesheet from the appended to your tastes. Get the perfect result at once and move gradually to your side as a pro. </p>
+	 
+	</div> 
+	<div class="col-md-6  ">
+	  
+		  <h3 class=" display-5 text-center  text-info mt-5"><strong>Good for Pro's</strong></h3>
+	<p class="   ">
+	If you are a professional developer or a freelancer, you will find all the necessary parts for yourself - correctly structured Sass files and a Sass precompiler with a Gulp file.
+					</p>
+	</div>
+		
+	</div>
+	</div>
+	
+		</section>
+  </main>
+
+  <section id="price" class="mb-0 mt-0 pt-5 pb-5 bg-light price-demo">
+       <div class="footer  ">
+         <div class="footer-overlay    pt-5 pb-5">
+           <div class="container">
+             <div class="row justify-content-center  d-flex">
+               <div class="col-xs-12 col-md-10">
+					<div class="row  text-center" style=" ">
+						<div class="col-12" style=" ">
+						<h3 class="pb-2 display-2 mt-1 mb-2 ">  <strong>STARTER KIT  <span class="badge badge-danger text-light badge-pro">PRO</span> <strong></h3>
+						<h3 class="pb-2 display-5 mt-1 mb-5 ">  Choose the package that is Good for you.
+						 
+						</h3>
+							
+						</div>
+						 
+					</div>
+				 
+					 <div class="row justify-content-center d-flex text-center">
+					 <div class="  col-md-6" style=" ">
+					 <div class="card card-body bg-white">
+						<a href="#" class="btn btn-lg bg-gradient-light-orange btn-round  btn-rised  ">
+								 <del>$199</del> $99 | Buy now <i class="fa fa-arrow-circle-right"></i></a>
+								 
+						<h4 class="display-4 mb-1">DEVELOPER LICENSE</h4>
+						<p class=" mb-4">Get the package with an Developer License.</p>
+						<a   class="btn btn-block btn-white mb-3" data-toggle="collapse" href="#collapseTemplates4" role="button" aria-expanded="false" aria-controls="collapseTemplates4">   Developer license <i class="fa fa-question-circle" aria-hidden="true"></i></a>
+							<div class="collapse" id="collapseTemplates4">
+								<div class="card card-body bg-white text-dark text-left">
+								<div class="row">
+							 
+								<div class="col-md-12">
+									<h4 class="display-4   mb-2 mt-2"><strong>Developer License</strong></h4>
+									<p><strong>May be used in ONE End Product that is for Sale.</strong></p>
+									<ul class="list-unstyled">
+										<li><i class="fas fa-check-circle text-success" aria-hidden="true"></i> Use in contracted work</li>	
+										<li><i class="fas fa-check-circle text-success" aria-hidden="true"></i> Use in unlimited projects</li>
+										<li><i class="fas fa-check-circle text-success" aria-hidden="true"></i> Use in ONE Product is for Sale</li>
+									</ul>
+								</div>
+								</div>
+							</div>
+						</div>
+					 </div>
+					 </div>
+					 
+					 <div class="col-md-6">
+							<div class="card card-body bg-white">
+							<a href="#" class="btn btn-lg bg-gradient-green   btn-rised   btn-round ">
+								 <del>$149</del> $75 | Buy now <i class="fa fa-arrow-circle-right"></i></a>
+								 
+						<h4 class="display-4 mb-1">Extended license</h4>
+						<p class="  mb-4">Get the package Extended License.</p>
+					
+							
+								 	<a   class="btn btn-block btn-white mb-3 " data-toggle="collapse" href="#collapseTemplates8" role="button" aria-expanded="false" aria-controls="collapseTemplates8">About Extended license <i class="fa fa-question-circle" aria-hidden="true"></i></a>
+							 
+					
+						
+						<div class="collapse" id="collapseTemplates8">
+								<div class="card card-body bg-white text-dark text-left">
+								<div class="row">
+							 
+								<div class="col-md-12">
+								<h4 class="display-4   mb-2 mt-2"><strong>Extended License</strong></h4>
+									<p><strong>May be used in unlimited numbers of end products that are NOT FOR SALE</strong>.</p>
+									<ul class="list-unstyled">
+										<li><i class="fas fa-check-circle text-success" aria-hidden="true"></i> Use in free end product</li>
+										<li><i class="fas fa-check-circle text-success" aria-hidden="true"></i> Use in end products are NOT for sale</li>
+										<li><i class="fas fa-check-circle text-success" aria-hidden="true"></i> Use in contracted works</li>	
+										<li><i class="fas fa-check-circle text-success" aria-hidden="true"></i> Unlimited Number of projects</li>
+							
+								</div>
+								</div>
+							</div>
+						</div>
+						</div>
+						 
+					 </div>
+					 </div>
+				 
+					 
+			 
+					 
+               <!-- /.col -->
+             </div>
+			 
+             <!-- /.row -->
+              
+           </div>
+           <!-- /.row -->
+		 
+         </div>
+         <!-- /.container -->
+       </div>
+       <!-- /.footer-overlay -->
+
+       <!-- /.footer -->
+     </section>
+<div class="modal fade  " id="videoModal" tabindex="-1" role="dialog" aria-labelledby="videoModal" aria-hidden="true">
+  <div class="modal-dialog modal-lg ">
+    <div class="modal-content  m-shadow-32 bg-gradient-blue">
+      <div class="modal-body ">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <div class="d-flex justify-content-center ">
+         <iframe width="560" height="315" src="https://www.youtube.com/embed/F14803bZjGg?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+		<hr/>
+		<div class="d-flex justify-content-center"> 
+              <a class="btn btn-info btn-lg btn-raised  bgd-gradient-8 m-shadow-8  mt-md-3 mb-3 scroll velocity-animating btn-round" href="#price">GRAB IT NOW!</a>
+		</div>
+      </div>
+    </div>
+  </div>
+</div>
+ 
+  <!-- Bootstrap core JavaScript
+    ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <!-- jQuery is required -->
+   <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/popper.min.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+  <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+  <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+ 
+  <script>
+  
+						 
+		// masonry 
+		 document.addEventListener('DOMContentLoaded', function() {
+    
+				$('#container-images').imagesLoaded().progress( function( instance ) {
+					$('.spinner').remove();
+						$('.filter-button-group').on( 'click', 'button', function() {
+							var filterValue = $(this).attr('data-filter');
+							$('.grid').isotope({ filter: filterValue });
+							});
+
+							var $grid = $('.grid');
+							$grid.isotope({
+							itemSelector: '.grid-item',
+							percentPosition: true,
+							masonry: {
+							columnWidth: '.grid-sizer'
+							 }
+							});
+								$('.filter-button-group').on( 'click', 'button', function() {
+								var filterValue = $(this).attr('data-filter');
+								$grid.isotope({ filter: filterValue });
+								if ($(this).hasClass('active')){
+								
+								}
+								else{
+									$('.filter-button-group').find('.active').removeClass('active');
+									$(this).addClass('active')
+									
+								}
+							});
+						
+				})
+		 });
+		 		$('.scroll').click(function() {
+						if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+						  var target = $(this.hash);
+						  target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+						  if (target.length) {
+							$('html,body').animate({
+							  scrollTop: target.offset().top
+							}, 500);
+							return false;
+						  }
+						}
+						
+					  });
+					  
+					  //Bootstrap 4 tooltip plugin
+					$(function () {
+						$('[data-toggle="tooltip"]').tooltip()
+					});
+	
+  </script>
+
+  
+    
+ 
+  
+</body>
+
+</html>

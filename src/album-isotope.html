@@ -1,0 +1,277 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="icon" href="favicon.ico">
+  <!-- Bootstrap core CSS + Orange theme -->
+  <link rel="stylesheet" href="assets/css/theme/style.css">
+  <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+
+  <title>Album example for Bootstrap</title>
+
+  <!-- Bootstrap core CSS -->
+
+  <style>
+    .album {
+      min-height: 50rem;
+      padding-top: 3rem;
+      padding-bottom: 3rem;
+    }
+
+    .album .card {
+      float: left;
+      width: 33.333%;
+      padding: .75rem;
+      margin-bottom: 2rem;
+      border: 0;
+    }
+	.gallery-wrapper {
+	  overflow: hidden;
+	}
+
+	.grid-item {
+	  padding-bottom: 3rem;
+	}
+
+	.sidebar {
+	  text-align: center;
+	  padding: 1rem;
+	  background: red;
+	  height: 900px;
+	}
+  </style>
+
+</head>
+
+<body>
+
+  <header>
+    <div class="collapse bg-primary" id="navbarHeader">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-8 py-4">
+            <h4 class="text-white">About</h4>
+            <p class="text-light">Add some information about the album below, the author, or any other background context. Make it a few sentences long so folks can pick up some informative tidbits. Then, link them off to some social networking sites or contact information.</p>
+          </div>
+          <div class="col-sm-4 py-4">
+            <h4 class="text-white">Contact</h4>
+            <ul class="list-unstyled">
+              <li><a href="#" class="text-white">Follow on Twitter</a></li>
+              <li><a href="#" class="text-white">Like on Facebook</a></li>
+              <li><a href="#" class="text-white">Email me</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="navbar navbar-dark bg-primary">
+      <div class="container d-flex justify-content-between">
+        <a href="#" class="navbar-brand">Album</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+      </div>
+    </div>
+  </header>
+
+  <main role="main">
+
+    <section class="jumbotron text-center p-0 " >
+      <div class="bg-primary p-5">
+        <div class="container">
+          <h1 class="jumbotron-heading text-light">Isotope Filter Grid Example</h1>
+          <p class="lead text-light">Something short and leading about the collection below—its contents, the creator, etc. Make it short and sweet, but not too short so folks don't simply skip over it entirely.</p>
+           
+        </div>
+      </div>
+    </section>
+	 <div class="container">
+	 <div class="row mt-5 mb-5 justify-content-center  d-flex">
+	 
+		 <ul class="nav nav-pills nav-pills-white filter-button-group" role="tablist">  
+		  <button class="nav-link active btn btn-white m-1" data-filter="*">show all</button>
+		  <button class="nav-link btn btn-white m-1" data-filter=".metal">metal</button>
+		  <button class="nav-link btn btn-white m-1" data-filter=".transition">transition</button>
+		</ul>
+ 
+	</div>
+	</div>
+    <div class="album mt-5">
+  <div class="container">
+  <!-- add extra container element for Masonry -->
+  <div class="grid">
+    <!-- add sizing element for columnWidth -->
+    <div class="grid-sizer col-sm-4 col-md-4"></div>
+    <!-- items use Bootstrap .col- classes -->
+    <div class="grid-item col-sm-8 col-md-4 transition" data-category="transition">
+      <!-- wrap item content in its own element -->
+      <div class="grid-item-content">
+		<img class="img-fluid rounded" src="http://via.placeholder.com/1024x900"></div>
+    </div>
+    <div class="grid-item col-sm-4 col-md-4 transition" data-category="transition">
+      <div class="grid-item-content"> 
+		<img class="img-fluid rounded" src="http://via.placeholder.com/500x570"></div>
+    </div> 
+	<div class="grid-item col-sm-4 col-md-4 transition" data-category="transition">
+      <div class="grid-item-content"> 
+		<img class="img-fluid rounded" src="http://via.placeholder.com/500x970"></div>
+    </div> 
+
+	<div class="grid-item col-sm-4 col-md-4 metal" data-category="metal">
+      <div class="grid-item-content"> 
+		<img class="img-fluid rounded" src="http://via.placeholder.com/500x870"></div>
+    </div> 
+	
+	<div class="grid-item col-sm-4 col-md-4 transition" data-category="transition">
+      <div class="grid-item-content"> 
+		<img class="img-fluid rounded" src="http://via.placeholder.com/500x570"></div>
+    </div> 
+	<div class="grid-item col-sm-4 col-md-4 metal" data-category="metal">
+      <div class="grid-item-content"> 
+		<img class="img-fluid rounded" src="http://via.placeholder.com/500x570"></div>
+    </div>
+	<div class="grid-item col-sm-4 col-md-4 metal" data-category="metal">
+      <div class="grid-item-content"> 
+		<img class="img-fluid rounded" src="http://via.placeholder.com/500x570"></div>
+    </div>
+     
+  </div>
+</div>
+
+
+     
+    
+    
+  </div>
+</div>
+    </div>
+
+  </main>
+
+  <section class="mb-0 mt-0">
+       <div class="footer  ">
+         <div class="footer-overlay  bg-dark text-light pt-5 pb-5">
+           <div class="container">
+             <div class="row">
+               <div class="col-xs-6 col-sm-3">
+                 <a href="#"><svg class="d-block mb-4" width="36" height="36" viewBox="0 0 612 612" xmlns="http://www.w3.org/2000/svg" focusable="false"><title>Bootstrap</title><path fill="currentColor" d="M510 8a94.3 94.3 0 0 1 94 94v408a94.3 94.3 0 0 1-94 94H102a94.3 94.3 0 0 1-94-94V102a94.3 94.3 0 0 1 94-94h408m0-8H102C45.9 0 0 45.9 0 102v408c0 56.1 45.9 102 102 102h408c56.1 0 102-45.9 102-102V102C612 45.9 566.1 0 510 0z"></path><path fill="currentColor" d="M196.77 471.5V154.43h124.15c54.27 0 91 31.64 91 79.1 0 33-24.17 63.72-54.71 69.21v1.76c43.07 5.49 70.75 35.82 70.75 78 0 55.81-40 89-107.45 89zm39.55-180.4h63.28c46.8 0 72.29-18.68 72.29-53 0-31.42-21.53-48.78-60-48.78h-75.57zm78.22 145.46c47.68 0 72.73-19.34 72.73-56s-25.93-55.37-76.46-55.37h-74.49v111.4z"></path></svg></a>
+                 <address class="color-light-20">
+                   1600 Amphitheatre Parkway<br>
+                   Mountain View, CA 94043
+                 </address>
+                 <ul class="list-unstyled list-light">
+                   <li><a href="#">Disclaimer</a></li>
+                 </ul>
+               </div>
+               <!-- /.col -->
+               <div class="col-xs-6 col-sm-3">
+                 <h4 class="my-2">Product</h4>
+                 <ul class="list-unstyled list-light">
+                   <li><a href="#">Pricing</a></li>
+                   <li><a href="#">Features</a></li>
+                   <li><a href="#">Customers</a></li>
+                   <li><a href="#">Store</a></li>
+                 </ul>
+               </div>
+               <!-- /.col -->
+
+               <br style="clear:both" class="hidden-sm-up">
+
+               <div class="col-xs-6 col-sm-3">
+                 <h4 class="my-2">Company</h4>
+                 <ul class="list-unstyled list-light">
+                   <li><a href="#">About Us</a></li>
+                   <li><a href="#">Blog</a></li>
+                   <li><a href="#">Careers</a></li>
+                   <li><a href="#">Press</a></li>
+                   <li><a href="#">Events</a></li>
+                   <li><a href="#">Contact</a></li>
+                 </ul>
+               </div>
+               <!-- /.col -->
+               <div class="col-xs-6 col-sm-3">
+                 <h4 class="my-2">Connect</h4>
+                 <ul class="list-unstyled list-light">
+                   <li><a href="#">Support</a></li>
+                   <li><a href="#">Social</a></li>
+                   <li><a href="#">Community</a></li>
+                 </ul>
+
+
+
+
+
+                 <div class="mt-2 hor-spacing-sm-a">
+                   <a href="#" role="button" class="text-light p-1 m-2 btn btn-round btn-icon btn-primary"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
+                   <a href="#" role="button" class="text-light p-1 m-2 btn btn-round btn-icon btn-primary"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                   <a href="#" role="button" class="text-light p-1 m-2 btn btn-round btn-icon btn-primary"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+
+                 </div>
+               </div>
+               <!-- /.col -->
+             </div>
+             <!-- /.row -->
+             <div class="col-xs-12 text-xs-center text-secondary my-3">
+               © Copyright 2017 • All Rights Reserved
+             </div>
+           </div>
+           <!-- /.row -->
+         </div>
+         <!-- /.container -->
+       </div>
+       <!-- /.footer-overlay -->
+
+       <!-- /.footer -->
+     </section>
+
+  <!-- Bootstrap core JavaScript
+    ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <!-- jQuery is required -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+  <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+  <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+  <script>
+  
+  
+		// masonry 
+		 document.addEventListener('DOMContentLoaded', function() {
+    
+ 
+		$('.filter-button-group').on( 'click', 'button', function() {
+			var filterValue = $(this).attr('data-filter');
+			$('.grid').isotope({ filter: filterValue });
+			});
+
+			var $grid = $('.grid');
+			$grid.isotope({
+			itemSelector: '.grid-item',
+			percentPosition: true,
+			masonry: {
+			columnWidth: '.grid-sizer'
+			 }
+			});
+				$('.filter-button-group').on( 'click', 'button', function() {
+				var filterValue = $(this).attr('data-filter');
+				$grid.isotope({ filter: filterValue });
+				if ($(this).hasClass('active')){
+				
+				}
+				else{
+					$('.filter-button-group').find('.active').removeClass('active');
+					$(this).addClass('active')
+					
+				}
+			});
+		 });
+  </script>
+  
+</body>
+
+</html>

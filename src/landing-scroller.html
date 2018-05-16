@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="UTF-8">
+<title>Bootstrap 4 generator example page</title>
+
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="description" content="">
+<meta name="author" content="">
+<link rel="icon" href="favicon.ico">
+  <!-- Bootstrap core CSS + orange theme -->
+  <link id="demo-switcher" rel="stylesheet" href="assets/css/theme/style.css">
+  <link rel="alternate stylesheet" title="Red" href="assets/css/theme/style-red.css" type="text/css">
+  <link rel="alternate stylesheet" title="Blue" href="assets/css/theme/style-blue.css" type="text/css">
+  <link rel="alternate stylesheet" title="Orange" href="assets/css/theme/style-orange.css" type="text/css">
+  <link rel="alternate stylesheet" title="Green" href="assets/css/theme/style-green.css" type="text/css">
+  <link rel="alternate stylesheet" title="Cyan" href="assets/css/theme/style-cyan.css" type="text/css">
+  <link rel="alternate stylesheet" title="Teal" href="assets/css/theme/style-teal.css" type="text/css">
+  
+  <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+  <link rel="stylesheet" href="assets/css/demo2.css">
+ 
+<!-- Plugins -->
+<style>
+	.browser-mockup {
+	  border-top: 2em solid rgba(230, 230, 230, 0.7);
+	  position: relative;
+	  border-radius: 10px 10px 0 0
+	}
+
+	.browser-mockup:before {
+	  display: block;
+	  position: absolute;
+	  content: '';
+	  top: -1.25em;
+	  left: 1em;
+	  width: 0.5em;
+	  height: 0.5em;
+	  border-radius: 50%;
+	  background-color: #f44;
+	  box-shadow: 0 0 0 2px #f44, 1.5em 0 0 2px #9b3, 3em 0 0 2px #fb5;
+	}
+	
+	.navbar-nav .nav-link.active {
+		color: var(--primary) !important;
+	}	
+</style>
+<style>.bmc-button img{width: 27px !important;margin-bottom: 3px !important;box-shadow: none !important;border: none !important;vertical-align: middle !important;}.bmc-button{line-height: 41px !important;height:41px !important;text-decoration: none !important;display:inline-block !important;color:#FFFFFF !important;background-color:#FF813F !important;border-radius: 3px !important;border: 1px solid transparent !important;padding: 0px 9.5px !important;font-size: 24px !important;letter-spacing: 0.6px !important;box-shadow: 0px 1px 2px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 1px 2px 2px rgba(190, 190, 190, 0.5) !important;-o-transition: 0.3s all linear !important;-moz-transition: 0.3s all linear !important;-webkit-transition: 0.3s all linear !important;-ms-transition: 0.3s all linear !important;transition: 0.3s all linear !important;margin: 0 auto !important;font-family:"Cookie",sans-serif !important;}.bmc-button:hover, .bmc-button:active, .bmc-button:focus {-webkit-box-shadow: 0 4px 16px 0 rgba(190, 190, 190,.45) !important;text-decoration: none !important;box-shadow: 0 4px 16px 0 rgba(190, 190, 190,.45) !important;opacity: 0.85 !important;color:#FFFFFF !important;}</style>
+</head>
+
+<body>
+<header id="top" class="target-hover">
+    <div class="container">
+      <nav id="TopNav" class="navbar navbar-light bg-white navbar-expand-md no-gutters fixed-top">
+        <div class="col-2 text-left">
+          <a href="#">
+            SpyScroller
+          </a>
+        </div>
+
+        <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarNav4" aria-controls="navbarNav4" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-center col-md-8" id="navbarNav4">
+          <ul class="navbar-nav justify-content-center">
+            <li class="nav-item active">
+              <a class="nav-link scroll" href="#top">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link scroll" href="#section-1">Section-1</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link scroll" href="#section-2">Section-2</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link scroll" href="#section-3">Section-3</a>
+            </li> 
+			<li class="nav-item">
+              <a class="nav-link scroll" href="#section-4">Section-4</a>
+            </li>
+			<li class="nav-item">
+              <a class="nav-link scroll" href="#section-5">Section-5</a>
+            </li>
+			<li class="nav-item">
+              <a class="nav-link scroll" href="#section-6">Section-6</a>
+            </li>
+			<li class="nav-item">
+              <a class="nav-link scroll" href="#section-7">Section-7</a>
+            </li>
+          </ul>
+        </div>
+
+        <ul class="navbar-nav col-2 justify-content-end d-none d-md-flex">
+          <li class="nav-item">
+            <a class="btn btn-primary  btn-round  scroll" href="#section-7">Grab it now!</a>
+          </li>
+         
+        </ul>
+      </nav>
+    </div>
+  </header>
+        
+		
+   <section  class="pt-5 pb-0 mt-5  align-items-bottom d-flex bg-primary text-light">
+   <div class="container-fluid">
+      <div class="row align-items-bottom justify-content-around ">
+        <div class="col-12 col-md-4 offset-md-1  ">
+            <h1 class="display-3   mb-3 mt-5"><strong>Bootstrap 4 w/ Smooth Scroll Navigation</strong> </h1>
+            <p class="lead   mb-3">Bootstrap 4 template with ScrollSpy menu and smooth scrolling effect based on the VelosityJs.</p>
+            <div class="btn-container-velocity d-flex mt-1 mb-3">
+              <a class="btn btn-light btn-lg btn-raised  btn-round  mt-md-3 mb-4 scroll" href="#section-1">Try It In Action</a>
+			   
+            </div>
+        </div>
+		<div class="col-12 col-md-7   mt-4 mt-md-0 pull-right align-self-end">
+			<div class="browser-mockup">
+			  <img class="img-fluid" src="http://placehold.it/800x400/dedede/eee">
+			</div>
+        </div>
+      </div>
+    </div>
+    </section>
+	<section  class="pt-3 pb-1 bg-light ">
+      <div class="container">
+        <div class="row flex-row justify-content-center">
+			<div class="col-md-4">
+				<p class="text-center">
+				<img title="" alt="image" style="max-width:70px" class="img-fluid ml-2" src="assets/images/logos/icon-html-5.jpg" data-toggle="tooltip" data-placement="top" data-original-title="HTML5">
+				<img alt="image" style="max-width:70px" class="img-fluid ml-2" src="assets/images/logos/icon-velocity.png" data-toggle="tooltip" data-placement="top" title="" data-original-title="Built with VelocityJs">
+				<img alt="image" style="max-width:70px" class="img-fluid ml-2" src="assets/images/logos/icon-bootstrap.jpg" data-toggle="tooltip" data-placement="top" title="" data-original-title="Bootstrap 4">
+			 </p>		
+			</div>
+		</div>	
+      </div>
+      <div class="content" style="background-image:url()">
+        <div class="content-overlay" style="background-color:rgba(0,0,0,0.1)">
+        </div>
+      </div>
+    </section>
+	<section id="section-1"  class="pt-5 pb-5">
+      <div class="container">
+	   <div class="row text-left justify-content-sm-center  mb-5 text-center">
+          <div class="col-12 col-sm-10 col-md-10">
+		  	<p class="lead"><strong>If you are creating a single-page website with smooth scrolling navigation...</strong> </p>
+            <h3 class="display-3"><strong>...You Need This Template!</strong></h3>
+		
+            <p>Smooth scrolling navigation is better than jumping over to sections.    But NEVER use again jQuery's <code>$.animate()</code> and <code>$.fade()</code> functions. They slow everything else down, including other animation libraries. So we built this template with <strong>VelocityJs </strong> - incredibly fast, and it features also color animation, transforms, loops, easings, SVG support. It is the best of jQuery and CSS transitions combined.</p> 
+          </div>
+         
+        </div>
+        <div class="row text-center justify-content-center">
+		 <div class="col-12  col-md-12 ">
+            <h3 class="display-4"><strong>Template Highlights</strong></h3>
+		</div>
+          <div class="col-12 col-sm-6 col-lg-4   ml-xl-auto mr-xl-auto">
+		 
+				<img alt="image" style="max-width:70px" class="img-fluid ml-2" src="assets/images/logos/icon-velocity.png" data-toggle="tooltip" data-placement="top" title="" data-original-title="Built with VelocityJs">
+				
+            <h4 class="display-5" >  Smooth Scrolling </h4>
+          
+          </div>
+          <div class="col-12 col-sm-6 col-lg-4   ml-xl-auto mr-xl-auto pt-3 pt-lg-0">
+		  <img alt="image" style="max-width:70px" class="img-fluid ml-2" src="assets/images/logos/icon-bootstrap.jpg" data-toggle="tooltip" data-placement="top" title="" data-original-title="Bootstrap 4">
+            <h4 class="display-5"> ScrollSpy Menu </h4>
+            
+          </div>
+          <div class="col-12 col-sm-6 col-lg-4   ml-xl-auto mr-xl-auto pt-3 pt-lg-0">
+		   <img title="" alt="image" style="max-width:70px" class="img-fluid ml-2" src="assets/images/logos/icon-html-5.jpg" data-toggle="tooltip" data-placement="top" data-original-title="HTML5">
+            <h4 class="display-5"> Built for Performance </h4>
+           
+          </div>
+ 
+        </div>
+
+       
+      </div>
+    </section>
+	<section id="section-2"  class="pt-5 pb-0  align-items-bottom d-flex">
+   <div class="container-fluid">
+      <div class="row align-items-bottom justify-content-around ">
+        <div class="col-12 col-md-4 offset-md-1 align-self-center ">
+            <h3 class="mt-4"><strong>Easy as a pie.</strong>  </h3>
+            <p class="lead   mb-3">Just add a class name <code>scroll</code> and the anchor in the <code>href="#id"</code> attribute to any navigation link. Add the same <code>id="id"</code> to the section or any element to which you want to scroll. Done!</p>
+            <div class="j  d-flex mt-1 mb-3">
+              
+
+			   
+            </div>
+        </div><div class="col-12 col-md-6   mt-4 mt-md-0 pull-right align-self-end">
+			<div class="browser-mockup">
+			  <img class="img-fluid" src="http://placehold.it/800x400/dedede/eee">
+			</div>
+        </div>
+        
+      </div>
+    </div>
+    </section>
+<section id="section-3" class="bg-light text-dark pt-5 pb-5">
+      <div class="container">
+        <div class="row text-center justify-content-sm-center no-gutters">
+          <div class="col-12 col-sm-8 col-md-3 m-auto">
+            <h3><strong>Feature 1</strong></h3>
+            <p>A collection of coded HTML and CSS elements to help you build your new website. Clean design, fully responsive and based on Bootstrap 4.</p>
+          </div>
+
+          <div class="col-12 col-sm-8 col-md-3 m-auto pt-3 pt-md-0">
+            <h3><strong>Feature 2</strong></h3>
+            <p>A collection of coded HTML and CSS elements to help you build your new website. Clean design, fully responsive and based on Bootstrap 4.</p>
+          </div>
+
+          <div class="col-12 col-sm-8 col-md-3 m-auto pt-3 pt-md-0">
+            <h3><strong>Feature 3</strong></h3>
+            <p>A collection of coded HTML and CSS elements to help you build your new website. Clean design, fully responsive and based on Bootstrap 4.</p>
+          </div>
+        </div>
+
+        <div class="row text-center justify-content-md-center pt-3 pt-md-5">
+          <div class="col-12 col-sm-8 col-md-3 m-auto">
+            <h3><strong>Feature 4</strong></h3>
+            <p>A collection of coded HTML and CSS elements to help you build your new website. Clean design, fully responsive and based on Bootstrap 4.</p>
+          </div>
+
+          <div class="col-12 col-sm-8 col-md-3 m-auto pt-3 pt-md-0">
+            <h3><strong>Feature 5</strong></h3>
+            <p>A collection of coded HTML and CSS elements to help you build your new website. Clean design, fully responsive and based on Bootstrap 4.</p>
+          </div>
+
+          <div class="col-12 col-sm-8 col-md-3 m-auto pt-3 pt-md-0">
+            <h3><strong>Feature 6</strong></h3>
+            <p>A collection of coded HTML and CSS elements to help you build your new website. Clean design, fully responsive and based on Bootstrap 4.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+	<section id="section-4" class="pt-5 pb-0  align-items-bottom d-flex">
+   <div class="container-fluid">
+      <div class="row align-items-bottom justify-content-center  ">
+        <div class="col-12 col-md-6   mt-4 mt-md-0 pull-right  align-self-end">
+			<div class="browser-mockup">
+			  <img class="img-fluid" src="http://placehold.it/800x400/dedede/eee">
+			</div>
+        </div>
+		<div class="col-12 col-md-4    align-self-center">
+            <h3 class="mt-4"><strong>Animation Performance</strong>  </h3>
+            <p class="lead   mb-3">Who says JavaScript animation is dead? VelocityJS replaces jQuery's <code>$.animate</code> and performs even better than CSS animations.</p>
+            <div class="j  d-flex mt-1 mb-3">
+              
+			   
+            </div>
+        </div>
+        
+      </div>
+    </div>
+    </section>
+	<section  class="bg-light text-dark pt-5 pb-5">
+      <div class="container">
+        <div class="row mb-5 ">
+          <div class="col-12 text-center">
+          </div>
+        </div>
+        <div class="row text-center justify-content-sm-center no-gutters">
+          <div class="col-12 col-sm-10 col-md-8 col-lg-7 col-xl-3 m-auto">
+            <div class="fdb-box fdb-touch">
+              <h2>Feature 1</h2>
+              <p>A collection of coded HTML and CSS elements to help you build your new website. </p>
+              <p class="mt-4"><a href="#">Learn More &gt;</a></p>
+            </div>
+          </div>
+          <div class="col-12 col-sm-10 col-md-8 col-lg-7 col-xl-3 m-auto pt-5 pt-xl-0">
+            <div class="fdb-box fdb-touch">
+              <h2>Feature 2</h2>
+              <p>A collection of coded HTML and CSS elements to help you build your new website.</p>
+              <p class="mt-4"><a href="#">Learn More &gt;</a></p>
+            </div>
+          </div>
+          <div class="col-12 col-sm-10 col-md-8 col-lg-7 col-xl-3 m-auto pt-5 pt-xl-0">
+            <div class="fdb-box fdb-touch">
+              <h2>Feature 3</h2>
+              <p>A collection of coded HTML and CSS elements to help you build your new website.</p>
+              <p class="mt-4"><a href="#">Learn More &gt;</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+	<section id="section-5" class="pt-5 pb-0  align-items-bottom d-flex">
+   <div class="container-fluid">
+      <div class="row align-items-bottom justify-content-around ">
+        <div class="col-12 col-md-4 offset-md-1 align-self-center ">
+            <h3 class="mt-4"><strong>Example Headline</strong>  </h3>
+            <p class="lead   mb-3">A collection of coded HTML and CSS elements to help you build your new website.</p>
+            <div class="j  d-flex mt-1 mb-3">
+              
+			   
+            </div>
+        </div><div class="col-12 col-md-6   mt-4 mt-md-0 pull-right align-self-end">
+			<div class="browser-mockup">
+			  <img class="img-fluid" src="http://placehold.it/800x400/dedede/eee">
+			</div>
+        </div>
+        
+      </div>
+    </div>
+    </section>
+
+<section id="section-6" class="pt-5">
+<div class="container">
+		<div class="row mb-4">
+				<div class="col-md-12 col-sm-12 order-sm-2">
+					<div class="row">
+						<div class="col-md-6 col-6 h-100">
+							<div class=" text-sm-left text-md-center mb-5">
+								<i class="fa fa-laptop fa-2x p-2 mt-1 mb-2 bg-primary rounded text-light" aria-hidden="true"></i>
+								<h3 class=" my-2">Responsive</h3>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod tenetur ex natus at dolorem enim!</p>
+							</div>
+						</div>
+						<div class="col-md-6 col-6 h-100">
+							<div class=" text-sm-left text-md-center mb-5">
+								<i class="fa fa-code fa-2x p-2 mt-1 mb-2 bg-primary rounded text-light" aria-hidden="true"></i>
+								<h3 class=" my-2">Bootstrap 4</h3>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod tenetur ex natus at dolorem enim! </p>
+							</div>
+						</div>
+						<div class="col-md-6 col-6 h-100">
+							<div class=" text-sm-left text-md-center mb-5">
+								<i class="fa fa-diamond fa-2x p-2 mt-1 mb-2 bg-primary rounded text-light" aria-hidden="true"></i>
+								<h3 class="my-2">Unique</h3>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod tenetur ex natus at dolorem enim!</p>
+							</div>
+						</div>
+						<div class="col-md-6 col-6 h-100">
+							<div class=" text-sm-left text-md-center mb-5">
+								<i class="fa fa-comments fa-2x p-2 mt-1 mb-2 bg-primary rounded text-light" aria-hidden="true"></i>
+								<h3 class=" my-2">Support</h3>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod tenetur ex natus at dolorem enim!</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+	  </div>
+	</section>
+		<section id="section-7" class="pt-5 pb-5 bg-primary text-dark">
+      <div class="container">
+        <div class="row d-flex">
+          <div class="col-md-12">
+            <div class="card">
+              <div class="card-body text-center p-5">
+                <h3 class="display-4 pb-2 h3 mt-1 mb-1 text-primary">Download the Best Smooth Scroll Bootstrap 4 Template Now!</h3>
+                <p class="lead mt-1">...and immediately see a performance boost across all browsers and devices — especially on mobile!</p>
+                <a href="#top" class="btn  	  btn-lg btn-white btn-rised ml-md-4 mt-md-3 scroll">Try to Go-to-Top</a>
+				<a  class="btn   btn-lg btn-primary btn-rised ml-md-4 mt-md-3 " href="#myModal2" data-toggle="modal" role="button">Download Now!</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+		
+	<section class="pb-3 pt-5 bg-light">
+      <div class="container">
+        <div class="row f-flex justify-content-between" style="justify-content: space-between;">
+          <div class="col-md-5   text-dark my-1">
+            <p class="mt-2  text-dark">© 2017 | <a class=" " href="#">Disclaimer</a> | <a class=" " href="#">Contact</a></p>
+          </div>
+          <div class="col-md-1 text-xs-center  text-lg-left text-dark my-1">
+            <a href="#" class="text-secandary"><svg class="d-block mt-2" width="36" height="36" viewBox="0 0 612 612" xmlns="http://www.w3.org/2000/svg" focusable="false"><title>Bootstrap</title><path fill="currentColor" d="M510 8a94.3 94.3 0 0 1 94 94v408a94.3 94.3 0 0 1-94 94H102a94.3 94.3 0 0 1-94-94V102a94.3 94.3 0 0 1 94-94h408m0-8H102C45.9 0 0 45.9 0 102v408c0 56.1 45.9 102 102 102h408c56.1 0 102-45.9 102-102V102C612 45.9 566.1 0 510 0z"></path><path fill="currentColor" d="M196.77 471.5V154.43h124.15c54.27 0 91 31.64 91 79.1 0 33-24.17 63.72-54.71 69.21v1.76c43.07 5.49 70.75 35.82 70.75 78 0 55.81-40 89-107.45 89zm39.55-180.4h63.28c46.8 0 72.29-18.68 72.29-53 0-31.42-21.53-48.78-60-48.78h-75.57zm78.22 145.46c47.68 0 72.73-19.34 72.73-56s-25.93-55.37-76.46-55.37h-74.49v111.4z"></path></svg></a>
+          </div>
+
+          <div class="col-md-4 text-xs-center   text-lg-right text-secondary my-1">
+            <div class="btn-container  mt-1 text-md-right text-sm-center">
+              <div class="mb-1 mr-3 align-self-right pt-0 d-inline-block">
+                <a href="#" role="button" class="p-2 m-2"><i class="fa fa-twitter fa-lg  " aria-hidden="true"></i></a>
+                <a href="#" role="button" class="p-2 m-2"><i class="fa fa-facebook fa-lg" aria-hidden="true"></i></a>
+                <a href="#" role="button" class="p-2 m-2"><i class="fa fa-linkedin fa-lg" aria-hidden="true"></i></a>
+                <a class="btn btn-light scroll" href="#top">Go top </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> 
+    </section>
+
+ 
+ <!--data-easein="fadeIn"-->
+    <div id="myModal2" class="modal" data-easein="slideDownIn" tabindex="-1" role="document" aria-labelledby="exampleModalLabel" aria-hidden="true" >
+      <div class="modal-dialog" role="document">
+		<div class="modal-content">
+		  <div class=" d-flex justify-content-center">
+			<h5 class="modal-title text-center mt-4  "><strong>Download for Free or Go Premium</strong> </h5>
+		 
+		  </div>
+		  
+		  <div class="modal-body text-center">
+		  <h5 class="modal-title text-center text-success">Like it? Please, support the project ;) </h5>
+		  <p><small>And we will create even more cool templates! We promise!</small></p>
+			
+		 <p><a class="bmc-button" target="_blank" href="https://www.buymeacoffee.com/bootstraptor"><img src="https://www.buymeacoffee.com/assets/img/BMC-btn-logo.svg" class="img-center" alt="Buy me a coffee"> <span style=" "> Buy me a coffee</span></a>
+		 </p>
+		  <hr/>
+		 	 <p class=" 	">Go premium and use it in any number of commercial projects without any restrictions + get Sass and Gulp files + get Support. Sound Good? Go Premium now!<br>
+		 <a class="btn btn-lg btn-primary bgd-gradient-light-orange btn-rised  mt-3" href="# "  ><del>$9</del>  $7 Buy an Extended License </a></p>
+		 <hr/>
+		 
+		 <p><small>Or give it try for free or use in personal projects.	</small><br>
+		 <a class="btn    btn-success btn-rised  " href="# "  >Download for Free Now!</a></p>
+		  </div>
+		  
+		</div>
+	  </div>
+    </div>
+
+ <!-- jQuery is required -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.2.2/velocity.min.js"></script>
+<script type="text/javascript" src="assets/js/vendors/style-switcher2.js"></script>
+<script>
+(function($) {
+  "use strict"; // Start of use strict
+
+  // Smooth scrolling using jQuery easing
+  /*$('a.scroll[href*="#"]:not([href="#"])').click(function() {
+    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+      if (target.length) {
+        $('html, body').animate({
+          scrollTop: (target.offset().top - 54)
+        }, 1000, "easeInOutExpo");
+        return false;
+      }
+    }
+  });*/
+  
+  $('a.scroll[href*="#"]:not([href="#"])').click(function(e) {
+		e.preventDefault();
+        e.stopPropagation();
+    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+      if (target.length) {
+	 
+		$(target).velocity('scroll', {
+            duration: 500,
+            offset: -40,
+            easing: 'ease-in-out'
+        });
+			//$(target).velocity("scroll", 1000)	
+		
+        
+      }
+    }
+  });
+  
+$(".btn-container-velocity").velocity("fadeIn", function(){
+	$(".btn-container-velocity .btn").velocity(
+		{ translateY: "10px" },
+		{ duration: 800, loop: true }
+	);
+});
+
+  // Closes responsive menu when a scroll trigger link is clicked
+   $('.scroll').click(function() {
+    $('.navbar-collapse').collapse('hide');
+  }); 
+
+  // Activate scrollspy to add active class to navbar items on scroll
+  $('body').scrollspy({
+    target: '#TopNav',
+    offset: 54
+  });
+  
+  // add the animation to the modal
+$("#myModal2").on('shown.bs.modal', function(e) {
+      
+      $('#myModal2 .modal-dialog').velocity("slideDown")
+     
+
+  });
+ 
+ 
+ 
+
+})(jQuery); // End of use strict
+				
+//Bootstrap 4 tooltip plugin
+$(function () {
+	$('[data-toggle="tooltip"]').tooltip()
+});
+	//Bootstrap modal + VelocityJs	
+/*$(".modal").on('shown.bs.modal', function(e) {
+	var open = $(this).attr('data-easein');
+	$('.modal-dialog').velocity('callout.' + open);
+});*/
+
+	  
+					  
+</script>
+ 
+
+
+
+</body>
+</html>
