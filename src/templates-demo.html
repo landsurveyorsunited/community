@@ -1,0 +1,910 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="icon" href="favicon.ico">
+  <!-- Bootstrap core CSS + Orange theme -->
+  <link rel="stylesheet" href="assets/css/theme/style.css">
+  <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+	  <link rel="stylesheet" href="assets/css/demo.css">
+  <title>Bootstrap 4 Starter KIT</title>
+
+  <!-- Bootstrap core CSS -->
+
+  <style>
+    .album {
+      min-height: 50rem;
+      padding-top: 3rem;
+      padding-bottom: 3rem;
+    }
+
+    .album .card {
+      float: left;
+      width: 33.333%;
+      padding: .75rem;
+      margin-bottom: 2rem;
+      border: 0;
+    }
+	.gallery-wrapper {
+	  overflow: hidden;
+	}
+
+	.grid-item {
+	  padding-bottom: 3rem;
+	}
+
+	.sidebar {
+	  text-align: center;
+	  padding: 1rem;
+	  background: red;
+	  height: 900px;
+	}
+	.grid-item-content   {
+		overflow:hidden;
+		max-height:650px;
+	}
+	
+	.float {
+  -webkit-transition:all .3s ease-out;
+  -moz-transition:all .3s ease-out;
+  -ms-transition:all .3s ease-out;
+  -o-transition:all .3s ease-out;
+  transition:all .3s ease-out;
+}
+
+.float:hover {
+  -webkit-transform:translate(0px,-10px);
+  -moz-transform:translate(0px,-10px);
+  -ms-transform:translate(0px,-10px);
+  -o-transform:translate(0px,-10px);
+  transform:translate(0px,-10px);
+}
+.ov-hidden{
+	overflow:hidden;
+}
+
+.transition-color {
+  -webkit-transition:all .3s ease-out;
+  -moz-transition:all .3s ease-out;
+  -ms-transition:all .3s ease-out;
+  -o-transition:all .3s ease-out;
+  transition:all .3s ease-out;
+}
+
+.spinner {
+  margin: 100px auto 0;
+  width: 70px;
+  text-align: center;
+}
+
+.spinner > div {
+  width: 18px;
+  height: 18px;
+  background-color: #f83600;
+
+  border-radius: 100%;
+  display: inline-block;
+  -webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+  animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+}
+
+.spinner .bounce1 {
+  -webkit-animation-delay: -0.32s;
+  animation-delay: -0.32s;
+}
+
+.spinner .bounce2 {
+  -webkit-animation-delay: -0.16s;
+  animation-delay: -0.16s;
+}
+
+@-webkit-keyframes sk-bouncedelay {
+  0%, 80%, 100% { -webkit-transform: scale(0) }
+  40% { -webkit-transform: scale(1.0) }
+}
+
+@keyframes sk-bouncedelay {
+  0%, 80%, 100% { 
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  } 40% { 
+    -webkit-transform: scale(1.0);
+    transform: scale(1.0);
+  }
+}
+  </style>
+
+</head>
+
+<body>
+
+
+
+  <main role="main">
+	
+<div class="rellax" data-rellax-speed="0.5" data-rellax-percentage="0.5" >
+	<nav class="navbar   navbar-expand-md navbar-dark fixed-top transition-color bg-gradient-light-orange">
+              <a class="navbar-brand" href="#">BS4 STARTER KIT</a>
+              <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+
+              <div class="navbar-collapse justify-content-md-end justify-content-sm-center d-md-flex collapse" id="navbarsExampleDefault" text-center="">
+                <ul class="navbar-nav  align-self-right pt-0  ">
+                  <li class="nav-item active">
+                    <a class="nav-link " href="index.html">Design System </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link  " href="blocks-demo.html">UI KIT</a>
+                  </li>
+
+
+                  <li class="nav-item">
+                    <a class="nav-link  " href="generator.html">GENERATOR</a>
+                  </li>
+				  
+				  <li class="nav-item">
+                    <button class=" btn bg-gradient-orange btn-round " href="bundle.html">GO PREMIUM</button>
+                  </li>
+
+
+                </ul>
+
+              </div>
+            </nav>
+    <section class="mt-0 mb-0 pt-5 pb-0 bg-gradient-light-orange text-center" style=" ">
+
+      <div class="    pb-5 pt-5 justify-content-center d-flex align-items-center">
+        
+      
+	   <div class="container  pt-0  ">
+
+          <div class="row justify-content-center d-flex align-items-center">
+
+            <div class="col-xs-12 col-md-12   ">
+              <div class="rellax" data-rellax-speed="-1.2">
+                <h1 class="display-2	 hero-header  text-light     ">Bootstrap 4  Starter KIT  </h1>
+              </div>
+             
+              <h3 class="display-5 text-light">Reusable Templates Growing Library.  And because it is based on Bootstrap 4 you will find it very easy to expand and build upon the included templates. </h3>
+	 
+              
+			   
+            <!--  <div class="rellax" data-rellax-speed="4">
+                
+                <p class=" text-light text-center mb-4 mt-4">We won't even make you share it - but it'd be cool if you did.</p>
+              </div> -->	 
+
+			  
+              </div>
+            </div>
+
+          </div>
+        </div>
+    </section>
+</div>
+
+	
+	 <div class="container">
+			 	 <div class="row mt-5 mb-5  justify-content-center  d-flex">
+	 <div class="col-12 col-md-12 text-center">
+	  <h3 class=" display-4 text-center  ">Take a look what inside</h3>
+	  
+	 
+		 <ul class="mt-5 nav nav-pills nav-pills-white filter-button-group justify-content-center  d-flex" role="tablist justify-content-center  d-flex">  
+		  <button class="nav-link active btn btn-white   btn-round btn-rised m-1" data-filter="*">Show all</button>
+		  <button class="nav-link btn btn-white  btn-lg  btn-round btn-rised m-1" data-filter=".about">About</button>
+		  <button class="nav-link btn btn-white  btn-lg   btn-round btn-rised m-1" data-filter=".blog">Blog</button>
+		  <button class="nav-link btn btn-white  btn-lg    btn-round btn-rised m-1" data-filter=".business">Business</button>
+		  <button class="nav-link btn btn-white  btn-lg    btn-round btn-rised m-1" data-filter=".contact">Contact</button>
+		  <button class="nav-link btn btn-white  btn-lg   btn-round btn-rised m-1" data-filter=".cover">Cover</button>
+		  <button class="nav-link btn btn-white  btn-lg   btn-round btn-rised m-1" data-filter=".dashboard">Dashboard</button>
+		  <button class="nav-link btn btn-white  btn-lg  btn-round btn-rised m-1" data-filter=".landing">Landing</button>
+		  <button class="nav-link btn btn-white btn-lg   btn-round btn-rised m-1" data-filter=".project">Project</button>
+		  <button class="nav-link btn btn-white  btn-lg   btn-round btn-rised m-1" data-filter=".squeeze">Squeeze</button>
+		  <button class="nav-link btn btn-white  btn-lg   btn-round btn-rised m-1" data-filter=".ecommerce">Ecommerce</button>
+		  <button class="nav-link btn btn-white  btn-lg   btn-round btn-rised m-1" data-filter=".masonry">Masonry</button>
+		  <button class="nav-link btn btn-white   btn-lg   btn-round btn-rised m-1" data-filter=".carousel">Carousel</button>
+		  <button class="nav-link btn btn-white  btn-lg    btn-round btn-rised m-1" data-filter=".video">Video</button>
+		  <button class="nav-link btn btn-white  btn-lg   btn-round btn-rised m-1" data-filter=".cards">Cards</button>
+		  <button class="nav-link btn btn-white  btn-lg  btn-round btn-rised m-1" data-filter=".pricing">Pricing</button>
+		</ul>
+	</div>
+	</div>
+	</div> 
+    <div class="album mt-5 bg-gradient-light">
+	 <div class="spinner">
+		  <div class="bounce1"></div>
+		  <div class="bounce2"></div>
+		  <div class="bounce3"></div>
+		</div>
+  <div id="container-images" class="container ">
+  <!-- add extra container element for Masonry -->
+  <div class="grid">
+    <!-- add sizing element for columnWidth -->
+    <div class="grid-sizer col-sm-4 col-md-4"></div>
+    <!-- items use Bootstrap .col- classes -->
+	
+	
+	<div class="grid-item col-sm-4 col-md-4  dashboard" data-category="dashboard">
+      <div class="grid-item-content   m-shadow-32"> 
+		<img class="img-fluid rounded  " src="assets/images/screenshots/_dashboard.png"></div>
+    </div> 
+	<div class="grid-item col-sm-4 col-md-4   landing" data-category="landing">
+      <div class="grid-item-content   m-shadow-32"> 
+		<img class="img-fluid rounded  " src="assets/images/screenshots/_landing.png"></div>
+    </div> 	
+	<div class="grid-item col-sm-4 col-md-4   landing" data-category="landing">
+      <div class="grid-item-content   m-shadow-32"> 
+		<img class="img-fluid rounded  " src="assets/images/screenshots/_platform.png"></div>
+    </div> 	
+	<div class="grid-item col-sm-4 col-md-4   landing" data-category="landing">
+      <div class="grid-item-content   m-shadow-32"> 
+		<img class="img-fluid rounded  " src="assets/images/screenshots/_platform2.png"></div>
+    </div>    
+	 <div class="grid-item col-sm-4 col-md-4   landing" data-category="landing">
+      <div class="grid-item-content   m-shadow-32"> 
+		<img class="img-fluid rounded  " src="assets/images/screenshots/landing-page-multi.png">
+		</div>
+    </div>    
+	 
+		
+	
+	
+    <div class="grid-item col-sm-8 col-md-4 about" data-category="about">
+      <!-- wrap item content in its own element -->
+      <div class="grid-item-content   m-shadow-32">
+		<img class="img-fluid rounded " src="assets/images/screenshots/_aboutme.png"></div>
+    </div>
+    <div class="grid-item col-sm-4 col-md-4 about" data-category="about">
+      <div class="grid-item-content   m-shadow-32"> 
+		<img class="img-fluid rounded  " src="assets/images/screenshots/_aboutus.png"></div>
+    </div> 
+	<div class="grid-item col-sm-4 col-md-4 blog" data-category="blog">
+      <div class="grid-item-content   m-shadow-32"> 
+		<img class="img-fluid rounded  " src="assets/images/screenshots/_blog.png"></div>
+    </div> 
+	
+	<div class="grid-item col-sm-4 col-md-4 blog" data-category="blog">
+      <div class="grid-item-content   m-shadow-32"> 
+		<img class="img-fluid rounded  " src="assets/images/screenshots/_blog-1col.png"></div>
+    </div> 
+	<div class="grid-item col-sm-4 col-md-4 blog" data-category="blog">
+      <div class="grid-item-content   m-shadow-32"> 
+		<img class="img-fluid rounded  " src="assets/images/screenshots/_blog-1col2var.png"></div>
+    </div> 
+	<div class="grid-item col-sm-4 col-md-4 blog" data-category="blog">
+      <div class="grid-item-content   m-shadow-32"> 
+		<img class="img-fluid rounded  " src="assets/images/screenshots/_blog-1col4var.png"></div>
+    </div> 
+	<div class="grid-item col-sm-4 col-md-4 business" data-category="blog">
+      <div class="grid-item-content   m-shadow-32"> 
+		<img class="img-fluid rounded  " src="assets/images/screenshots/_business_page-2.png"></div>
+    </div> 
+	<div class="grid-item col-sm-4 col-md-4 business" data-category="blog">
+      <div class="grid-item-content   m-shadow-32"> 
+		<img class="img-fluid rounded  " src="assets/images/screenshots/_business_page-3.png"></div>
+    </div> 
+	<div class="grid-item col-sm-4 col-md-4 business" data-category="blog">
+      <div class="grid-item-content   m-shadow-32"> 
+		<img class="img-fluid rounded  " src="assets/images/screenshots/_business_page-boxed.png"></div>
+    </div> 
+	<div class="grid-item col-sm-4 col-md-4 contact" data-category="contact">
+      <div class="grid-item-content   m-shadow-32"> 
+		<img class="img-fluid rounded  " src="assets/images/screenshots/_contact_us.png"></div>
+    </div> 
+	<div class="grid-item col-sm-4 col-md-4 contact" data-category="contact">
+      <div class="grid-item-content   m-shadow-32"> 
+		<img class="img-fluid rounded  " src="assets/images/screenshots/_contact_us_map.png"></div>
+    </div> 
+	<div class="grid-item col-sm-4 col-md-4 cover" data-category="cover">
+      <div class="grid-item-content   m-shadow-32"> 
+		<img class="img-fluid rounded  " src="assets/images/screenshots/_cover.png"></div>
+    </div> 	
+	<div class="grid-item col-sm-4 col-md-4 cover" data-category="cover">
+      <div class="grid-item-content   m-shadow-32"> 
+		<img class="img-fluid rounded  " src="assets/images/screenshots/_cover_particles.png"></div>
+    </div> 
+	<div class="grid-item col-sm-4 col-md-4 cover" data-category="cover">
+      <div class="grid-item-content   m-shadow-32"> 
+		<img class="img-fluid rounded  " src="assets/images/screenshots/_cover2step.png"></div>
+    </div>
+	<div class="grid-item col-sm-4 col-md-4 cover" data-category="cover">
+      <div class="grid-item-content   m-shadow-32"> 
+		<img class="img-fluid rounded  " src="assets/images/screenshots/_cover4.png"></div>
+    </div> 
+	<div class="grid-item col-sm-4 col-md-4 cover" data-category="cover">
+      <div class="grid-item-content   m-shadow-32"> 
+		<img class="img-fluid rounded  " src="assets/images/screenshots/_cover3.png"></div>
+    </div> 
+	
+	
+	
+	<div class="grid-item col-sm-4 col-md-4   landing" data-category="landing">
+      <div class="grid-item-content   m-shadow-32"> 
+		<img class="img-fluid rounded  " src="assets/images/screenshots/crypto.png"></div>
+    </div> 
+	<div class="grid-item col-sm-4 col-md-4   landing" data-category="landing">
+      <div class="grid-item-content   m-shadow-32"> 
+		<img class="img-fluid rounded  " src="assets/images/screenshots/_marketing.png"></div>
+    </div> 
+
+	<div class="grid-item col-sm-4 col-md-4  project" data-category="project">
+      <div class="grid-item-content   m-shadow-32"> 
+		<img class="img-fluid rounded  " src="assets/images/screenshots/_projects-1col.png"></div>
+    </div>
+	<div class="grid-item col-sm-4 col-md-4  project" data-category="project">
+      <div class="grid-item-content   m-shadow-32"> 
+		<img class="img-fluid rounded  " src="assets/images/screenshots/_projects-2col.png"></div>
+    </div> 	
+	<div class="grid-item col-sm-4 col-md-4  project" data-category="project">
+      <div class="grid-item-content   m-shadow-32"> 
+		<img class="img-fluid rounded  " src="assets/images/screenshots/_projects-3col.png"></div>
+    </div> 	
+	<div class="grid-item col-sm-4 col-md-4  project" data-category="project">
+      <div class="grid-item-content   m-shadow-32"> 
+		<img class="img-fluid rounded  " src="assets/images/screenshots/_projects-4col.png"></div>
+    </div> 
+	<div class="grid-item col-sm-4 col-md-4  project" data-category="project">
+      <div class="grid-item-content   m-shadow-32"> 
+		<img class="img-fluid rounded  " src="assets/images/screenshots/_projects-4col-fluid.png"></div>
+    </div> 
+	<div class="grid-item col-sm-4 col-md-4  squeeze" data-category="squeeze">
+      <div class="grid-item-content   m-shadow-32"> 
+		<img class="img-fluid rounded  " src="assets/images/screenshots/_squeeze.png"></div>
+    </div> 
+	<div class="grid-item col-sm-4 col-md-4  ecommerce" data-category="ecommerce">
+      <div class="grid-item-content   m-shadow-32"> 
+		<img class="img-fluid rounded  " src="assets/images/screenshots/shop.png"></div>
+    </div>
+	<div class="grid-item col-sm-4 col-md-4  ecommerce" data-category="ecommerce">
+      <div class="grid-item-content   m-shadow-32"> 
+		<img class="img-fluid rounded  " src="assets/images/screenshots/shop-2.png"></div>
+    </div> 
+	<div class="grid-item col-sm-4 col-md-4  ecommerce" data-category="ecommerce">
+      <div class="grid-item-content   m-shadow-32"> 
+		<img class="img-fluid rounded  " src="assets/images/screenshots/_store_1.png"></div>
+    </div> 
+	<div class="grid-item col-sm-4 col-md-4  ecommerce" data-category="ecommerce">
+      <div class="grid-item-content   m-shadow-32"> 
+		<img class="img-fluid rounded  " src="assets/images/screenshots/_store_2.png"></div>
+    </div>
+	<div class="grid-item col-sm-4 col-md-4  masonry" data-category="masonry">
+      <div class="grid-item-content   m-shadow-32"> 
+		<img class="img-fluid rounded  " src="assets/images/screenshots/isotope_filter.png"></div>
+    </div> 
+	<div class="grid-item col-sm-4 col-md-4  masonry" data-category="masonry">
+      <div class="grid-item-content   m-shadow-32"> 
+		<img class="img-fluid rounded  " src="assets/images/screenshots/masonry_images_grid.png"></div>
+    </div> 
+	<div class="grid-item col-sm-4 col-md-4  carousel" data-category="carousel">
+      <div class="grid-item-content   m-shadow-32"> 
+		<img class="img-fluid rounded  " src="assets/images/screenshots/_carousel.png"></div>
+    </div> 
+	<div class="grid-item col-sm-4 col-md-4  carousel" data-category="carousel">
+      <div class="grid-item-content   m-shadow-32"> 
+		<img class="img-fluid rounded  " src="assets/images/screenshots/_carousel_bg.png"></div>
+    </div> 
+	<div class="grid-item col-sm-4 col-md-4  video" data-category="video">
+      <div class="grid-item-content   m-shadow-32"> 
+		<img class="img-fluid rounded  " src="assets/images/screenshots/video-1.png"></div>
+    </div> 
+	<div class="grid-item col-sm-4 col-md-4  video" data-category="video">
+      <div class="grid-item-content   m-shadow-32"> 
+		<img class="img-fluid rounded  " src="assets/images/screenshots/video-1col.png"></div>
+    </div> 
+	<div class="grid-item col-sm-4 col-md-4  video" data-category="video">
+      <div class="grid-item-content   m-shadow-32"> 
+		<img class="img-fluid rounded  " src="assets/images/screenshots/video-2col.png"></div>
+    </div> 
+	<div class="grid-item col-sm-4 col-md-4  cards" data-category="cards">
+      <div class="grid-item-content   m-shadow-32"> 
+		<img class="img-fluid rounded  " src="assets/images/screenshots/cards.png"></div>
+    </div> 
+	<div class="grid-item col-sm-4 col-md-4  pricing" data-category="pricing">
+      <div class="grid-item-content   m-shadow-32"> 
+		<img class="img-fluid rounded  " src="assets/images/screenshots/pricing.png"></div>
+    </div> 
+
+
+
+	 
+	 
+     
+  </div>
+</div>
+
+
+     
+    
+    
+  </div>
+</div>
+    </div>
+<section class="middle">
+
+			<div class="container">
+	 <div class="row mt-5 mb-5 justify-content-center  d-flex">
+	 <div class="col-md-6   ">
+	  <h3 class=" display-4 text-center  text-danger">The problem</h3>
+		<p class="   ">
+						
+						 <span class="">The  Bootstrap framework is a popular choice these days due to its ease of use and quick, clean results.   However, if you're looking to build out a hefty site on this framework, you'll find yourself doing a lot of the heavy lifting. </p>
+	 
+	</div> 
+	<div class="col-md-6  ">
+	  
+		  <h3 class=" display-4 text-center  text-success">The solution</h3>
+	<p class="   ">
+	 This robust collection features more than 30 useful Bootstrap templates to incorporate into your site!  From landing pages to blog posts to scrollers, you'll find everything that you need to finish your site design with Bootstrap 4.
+					</p>
+	</div>
+		
+	</div>
+	</div>
+		<div class="container">
+			<div class="row">
+			
+			<div class="col-xs-12 col-sm-22 col-md-7 col-lg-7 p-md-5  ">
+				<h2 class="display-3 text-primary">Starter KIT Highlights</h2>
+				<ul class="list-unstyled">
+<li> 
+<p>
+Since no two websites are alike, and most sites are made up of dozens of different templates, 
+you can find yourself trying to build out a number of new templates on the Bootstrap framework. 
+That's why this <strong>Bootstrap 4 Starter KIT </strong>is perfect: it offers all the killer Bootstrap functionality, but with a ton more templates to work with!
+</p>
+</li>
+
+
+<li><h3 class="display-4">35+ Additional Bootstrap Templates</h3>
+<p>This Bootstrap 4 Starter KIT includes more than 35 professional templates to help you give your website the full Bootstrap effect! 
+From a contact page to a business blog to a standard 404 error page, this KIT has you covered. 
+</p>
+</li>
+
+
+<li><h3 class="display-4">
+Clear, Organized Code</h3>
+<p>
+The beautiful thing about Bootstrap is that all code is clearly labeled and easy to follow. 
+That means it's easy to update as well. And all KIT templates included in this collection not only meet today's Web design standards, 
+but they're also a breeze to follow.
+</p>
+</li>
+<li><h3 class="display-4">
+BONUS:  Bootstrap 4.0 Theme (CSS+SASS)</h3>
+<p>In addition to all those useful Bootstrap templates, your purchase of this Deal includes 5 fabulous Bootstrap 4.0 themes color swatches
+to liven up the look of your site. Each theme features the necessary CSS and SASS code. Primary color in this templates based on one of the custom Bootstrap 4 theme. You can always change any color or choose from <a href="index.html">Ready Themes Collection</a>.	</p>
+</li>
+				</ul>
+			</div>
+			
+			<div class="col-xs-12 col-sm-22 col-md-5 col-lg-5 p-md-5">
+				<h2 class="display-4 ">Testimonials 
+					<i class="fa fa-star text-muted" aria-hidden="true"></i> 
+					<i class="fa fa-star text-muted" aria-hidden="true"></i>
+					<i class="fa fa-star text-muted" aria-hidden="true"></i>
+					<i class="fa fa-star text-muted" aria-hidden="true"></i>
+					<i class="fa fa-star text-muted" aria-hidden="true"></i>
+					</h2>
+<blockquote >
+	<p><strong><i>If you think that Bootstrap templates are not enough for you, you should go with Bootstraptor. 
+		You will have a wide range to select from, which automatically gives you a lot of interesting things to work with.</strong></i>
+</p>		<cite><strong> <i class="fa fa-star text-warning" aria-hidden="true"></i> 
+					<i class="fa fa-star text-warning" aria-hidden="true"></i>
+					<i class="fa fa-star text-warning" aria-hidden="true"></i>
+					<i class="fa fa-star text-warning" aria-hidden="true"></i>
+					<i class="fa fa-star text-warning" aria-hidden="true"></i> - InspireTrends.com </strong></cite></blockquote>
+<hr>
+<blockquote>
+	<p><strong><i>For those who would like to have more templates than what’s just being offered with the bootstrap template sets, 
+	Bootstraptor brings you so much more..." </strong></i></p>		
+	<cite><strong> <i class="fa fa-star text-warning" aria-hidden="true"></i> 
+					<i class="fa fa-star text-warning" aria-hidden="true"></i>
+					<i class="fa fa-star text-warning" aria-hidden="true"></i>
+					<i class="fa fa-star text-warning" aria-hidden="true"></i>
+					<i class="fa fa-star text-warning" aria-hidden="true"></i> - SmashingHub.com</strong></cite></blockquote>
+	<hr>
+<blockquote>
+	<p><strong><i>Bootstraptor.com - a selection of a large number of premium Bootstrap templates including Starter Kit, 
+	based on the Bootstrap framework...</strong></i> </p>		
+	<cite><strong> <i class="fa fa-star text-warning" aria-hidden="true"></i> 
+					<i class="fa fa-star text-warning" aria-hidden="true"></i>
+					<i class="fa fa-star text-warning" aria-hidden="true"></i>
+					<i class="fa fa-star text-warning" aria-hidden="true"></i>
+					<i class="fa fa-star text-warning" aria-hidden="true"></i> - HabraHabr.ru</strong></cite></blockquote>
+	<hr>
+<blockquote>
+	<p><strong><i>... Awesome - thanks for the resource. They look great!</strong></i></p>		
+	<cite><strong><i class="fa fa-star text-warning" aria-hidden="true"></i> 
+					<i class="fa fa-star text-warning" aria-hidden="true"></i>
+					<i class="fa fa-star text-warning" aria-hidden="true"></i>
+					<i class="fa fa-star text-warning" aria-hidden="true"></i>
+					<i class="fa fa-star text-warning" aria-hidden="true"></i> - @99designs</strong></cite></blockquote>
+	<hr>
+<blockquote>
+	<p><strong><i>Have you heard about @bootstraptor yet? They are blowing up, with tools for web development with Bootstrap.</strong></i></p>		<cite><strong><i class="fa fa-star text-warning" aria-hidden="true"></i> 
+					<i class="fa fa-star text-warning" aria-hidden="true"></i>
+					<i class="fa fa-star text-warning" aria-hidden="true"></i>
+					<i class="fa fa-star text-warning" aria-hidden="true"></i>
+					<i class="fa fa-star text-warning" aria-hidden="true"></i> - @Mattermark </strong></cite></blockquote>
+
+	
+	</div>
+</div>
+</div>
+	
+		</section>
+  </main>
+
+  <section class="mb-0 mt-0 pt-5 pb-5 dark text-light price-demo">
+       <div class="footer  ">
+         <div class="footer-overlay    pt-5 pb-5">
+           <div class="container">
+             <div class="row justify-content-center  d-flex">
+               <div class="col-xs-12 col-md-8">
+					<div class="row  text-center" style=" ">
+						<div class="col-12" style=" ">
+						<h3 class="pb-2 display-3 mt-1 mb-2 ">The BOOTSTRAP 4 TEMPLATES STARTER KIT</h3>
+						<h3 class="pb-2 display-5 mt-1 mb-5 ">Choose the package that works for you.</h3>
+							
+						</div>
+						 
+					</div>
+					<hr/>
+					 <div class="row text-center">
+					 <div class="col-12" style=" ">
+						<a href="#" class="btn btn-lg bg-gradient-light-orange   btn-rised mt-5 ">
+								 <del>$199</del> $99 | Buy now <i class="fa fa-arrow-circle-right"></i></a>
+								 
+						<h4 class="display-4 mb-1">EXTENDED LICENSE</h4>
+						<p class="text-light mb-4">Get the package with an Extended License.</p>
+					 </div>
+						<div class="col-md-6">
+							<a   class="btn btn-block btn-outline-light mb-3" data-toggle="collapse" href="#collapseTemplates1" role="button" aria-expanded="false" aria-controls="collapseTemplates1"><i class="fa fa-clone" aria-hidden="true"></i> 	35+ Bootstrap templates <i class="fa fa-question-circle" aria-hidden="true"></i></a>
+						</div>
+						<div class="col-md-6">
+							<a   class="btn btn-block btn-outline-light mb-3" data-toggle="collapse" href="#collapseTemplates4" role="button" aria-expanded="false" aria-controls="collapseTemplates4"> <i class="fa fa-rocket" aria-hidden="true"></i> Extended license <i class="fa fa-question-circle" aria-hidden="true"></i></a>
+						</div>
+						 
+						<div class="col-md-12">
+							<div class="collapse" id="collapseTemplates1">
+								<div class="card card-body bg-white text-dark text-left">
+								<div class="row">
+							 
+								<div class="col-md-12">
+								<h4 class="display-4  ">TEMPLATES STARTER KIT</h4>
+									<p>This robust collection features more than 35+ useful Bootstrap templates to incorporate into your site!  From a contact page to a business blog to a standard 404 error page, this KIT has you covered.</p>
+								</div>
+								</div>
+							</div>
+						</div>
+						</div>
+						 
+					 </div>
+					  <div class="row">
+						 
+					
+					  
+						 <div class="col-md-12">
+							<div class="collapse" id="collapseTemplates4">
+								<div class="card card-body bg-white text-dark text-left">
+								<div class="row">
+							 
+								<div class="col-md-12">
+								<h4 class="display-4   ">Extended License</h4>
+									<p>An Extended License V1 allows purchased items to be used in unlimited numbers of end products that are for sale.</p>
+									<ul class="list-unstyled">
+										<li><i class="fa fa-check-square-o text-success" aria-hidden="true"></i> Use in free end product</li>
+										<li><i class="fa fa-check-square-o text-success" aria-hidden="true"></i> Use in end product for sale</li>
+										<li><i class="fa fa-check-square-o text-success" aria-hidden="true"></i> Use in contracted work</li>	
+										<li><i class="fa fa-check-square-o text-success" aria-hidden="true"></i> Unlimited Number of projects</li>
+									</ul>
+								</div>
+								</div>
+							</div>
+						</div>
+						</div>
+					 </div>
+					 <hr/>
+					 <div class="row text-center">
+					 <div class="col-12" style=" ">
+						<a href="#" class="btn btn-lg bg-gradient-light-blue   btn-rised mt-5 ">
+								 <del>$149</del> $79 | Buy now <i class="fa fa-arrow-circle-right"></i></a>
+								 
+						<h4 class="display-4 mb-1">The Premium Package</h4>
+						<p class="text-light mb-4">Get the package Developer License.</p>
+					 </div>
+						<div class="col-md-6">
+							<a   class="btn btn-block btn-outline-light mb-3" data-toggle="collapse" href="#collapseTemplates5" role="button" aria-expanded="false" aria-controls="collapseTemplates5"><i class="fa fa-clone" aria-hidden="true"></i> 	35+ Bootstrap templates <i class="fa fa-question-circle" aria-hidden="true"></i></a>
+						</div>
+						<div class="col-md-6">
+							<a   class="btn btn-block btn-outline-light mb-3" data-toggle="collapse" href="#collapseTemplates8" role="button" aria-expanded="false" aria-controls="collapseTemplates8"> <i class="fa fa-rocket" aria-hidden="true"></i> Developer license <i class="fa fa-question-circle" aria-hidden="true"></i></a>
+						</div>
+						 
+						<div class="col-md-12">
+							<div class="collapse" id="collapseTemplates5">
+								<div class="card card-body bg-white text-dark text-left">
+								<div class="row">
+								<div class="col-md-7">
+									<img src="../../graphics/screenshots/ads/Web-Mockup.jpg" alt="bootstrap 4 template" class="img-fluid rounded img-rised">
+								</div>
+								<div class="col-md-5">
+								<h4 class="display-4  ">TEMPLATES STARTER KIT</h4>
+									<p>This robust collection features more than 35+ useful Bootstrap templates to incorporate into your site!  From a contact page to a business blog to a standard 404 error page, this KIT has you covered.</p>
+								</div>
+								</div>
+							</div>
+						</div>
+						</div>
+					 
+					 </div>
+					  <div class="row">
+						 
+						
+					
+					 
+						 <div class="col-md-12">
+							<div class="collapse" id="collapseTemplates8">
+								<div class="card card-body bg-white text-dark text-left">
+								<div class="row">
+							 
+								<div class="col-md-12">
+								<h4 class="display-4   ">Developer License</h4>
+									<p>An Developer License V1 allows purchased items to be used in one end products that is for sale.</p>
+									<ul class="list-unstyled">
+										<li><i class="fa fa-check-square-o text-success" aria-hidden="true"></i> Use in contracted work</li>	
+										<li><i class="fa fa-check-square-o text-success" aria-hidden="true"></i> Use in one project</li>
+										<li><i class="fa fa-check-square-o text-success" aria-hidden="true"></i> Use in one project for sale</li>
+									</ul>
+								</div>
+								</div>
+							</div>
+						</div>
+						</div>
+					 </div>
+					  <hr/>
+					 <div class="row text-center">
+					 <div class="col-12" style=" ">
+						<a href="#" class="btn btn-lg bg-gradient-green   btn-rised mt-5 ">
+								 <del>$49</del> $19 | Buy now <i class="fa fa-arrow-circle-right"></i></a>
+								 
+						<h4 class="display-4 mb-1">The Simple Package</h4>
+						<p class="text-light mb-4">Get the Basic License.</p>
+					 </div>
+					 
+						<div class="col-md-6">
+							<a   class="btn btn-block btn-outline-light mb-3" data-toggle="collapse" href="#collapseTemplates10" role="button" aria-expanded="false" aria-controls="collapseTemplates10"><i class="fa fa-cubes" aria-hidden="true"></i> 35+ Bootstrap templates  <i class="fa fa-question-circle" aria-hidden="true"></i></a>
+						</div>
+						<div class="col-md-6">
+							<a   class="btn btn-block btn-outline-light mb-3" data-toggle="collapse" href="#collapseTemplates11" role="button" aria-expanded="false" aria-controls="collapseTemplates11"> <i class="fa fa-rocket" aria-hidden="true"></i> Simple license <i class="fa fa-question-circle" aria-hidden="true"></i></a>
+						</div>
+						 
+						<div class="col-md-12">
+							<div class="collapse" id="collapseTemplates10">
+								<div class="card card-body bg-white text-dark text-left">
+								<div class="row">
+								 
+								<div class="col-md-12">
+								<div class="col-md-6">
+								<h4 class="display-4  ">TEMPLATES STARTER KIT</h4>
+									<p>This robust collection features more than 35+ useful Bootstrap templates to incorporate into your site!  From a contact page to a business blog to a standard 404 error page, this KIT has you covered.</p>
+								</div>
+								</div>
+							</div>
+						</div>
+						
+						</div>
+						
+						
+					 </div>
+               </div>
+			    
+							<div class="collapse" id="collapseTemplates11">
+								<div class="card card-body bg-white text-dark text-left">
+								<div class="row">
+								 
+								<div class="col-md-12">
+								<h4 class="display-4   ">Simple License</h4>
+									<p>A Simple Commercial License V1 allows purchased items to be used in one end products that is not for sale.</p>
+									<ul class="list-unstyled">
+										<li><i class="fa fa-check-square-o text-success" aria-hidden="true"></i> Use in one contracted work</li>	
+										<li><i class="fa fa-check-square-o text-success" aria-hidden="true"></i> Use in one commercial 	project</li>
+										 
+									</ul>
+								</div>
+								</div>
+							</div>
+						</div>
+					 
+               <!-- /.col -->
+             </div>
+			 
+             <!-- /.row -->
+              
+           </div>
+           <!-- /.row -->
+		    <hr/>
+              <div class="row  text-center  mt-5" style="">
+						<div class="col-12" style=" ">
+						<h3 class="pb-2 display-4 mt-1 mb-2 badge badge-danger">SPECIAL OFFER!</h3>
+						<h3 class="pb-2 display-3 mt-3 mb-2 ">Get All-in-one Bundle Package</h3>
+						
+							 <p> All-in-one bundle package that you can mix and match to create your own unique themes! </p> 
+						</div>
+						 
+					</div>
+				 
+					<div class="row row-grid text-center">
+						<div class="col-12" style=" ">
+						<a href="#" class="btn btn-lg bg-gradient-violet   btn-rised mt-5 ">
+								 <del>$249</del> $149 | Buy now <i class="fa fa-arrow-circle-right"></i></a>
+								 
+						<h4 class="display-4 mb-1">All-In-One Package with Extended License</h4>
+						<h3 class="pb-2 display-5 mt-1 mb-5 ">This package has it all. You won't miss a thing. What you'll get:		
+						  </h3>
+					 </div>
+                            <div class="col-xs-12 col-md-4 my-1">
+                              <!-- image -->
+							
+                              <img src="../../graphics/screenshots/ads/Web-Mockup-2.jpg" alt="" class="img-fluid rounded img-rised">
+							   
+							   <h4 class="display-6 mt-3">80 BLOCKS STARTUP UI KIT</h4>
+							  
+                              <div class="justify-content-center d-flex mt-3 mb-5">
+							  
+                                <a class="btn bg-gradient-orange btn-round  btn-rised   mt-md-3 ml-md-3" href="blocks-demo.html" role="button">Live preview</a>
+
+                              </div>
+
+                            </div>
+                            <div class="col-xs-12 col-md-4 my-1">
+                              <!-- image -->
+								
+                              <img src="../../graphics/screenshots/ads/Web-Mockup.jpg" alt="" class="img-fluid rounded img-rised">
+							 <h4 class="display-6  mt-3">35 TEMPLATES STARTER KIT</h4>
+							
+							  
+                              <div class="justify-content-center d-flex mt-3 mb-5">
+                                <a class="btn bg-gradient-orange btn-round btn-rised    mt-md-3 ml-md-3" href="templates-demo.html" role="button">Live preview</a>
+
+
+                              </div>
+                            </div>
+							  <div class="col-xs-12 col-md-4 my-1">
+                              <!-- image -->
+							
+                              <img src="../../graphics/screenshots/ads/WebMockup3.jpg" alt="" class="img-fluid rounded img-rised">
+							
+								 <h4 class="display-6  mt-3">7 THEMES DESIGN UI KIT</h4>
+							   	
+                              <div class="justify-content-center d-flex mt-3 mb-5">
+                                <a class="btn bg-gradient-orange btn-round btn-rised   mt-md-3 ml-md-3" href="templates-demo.html" role="button">Live preview</a>
+
+
+                              </div>
+                            </div>
+
+
+
+
+
+                          </div>
+         </div>
+         <!-- /.container -->
+       </div>
+       <!-- /.footer-overlay -->
+
+       <!-- /.footer -->
+     </section>
+
+  <!-- Bootstrap core JavaScript
+    ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <!-- jQuery is required -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+  <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+  <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/js/vendors/tilt.jquery.min.js"></script>
+  <script>
+  
+  
+		// masonry 
+		 document.addEventListener('DOMContentLoaded', function() {
+    
+ $('#container-images').imagesLoaded()
+  
+  .done( function( instance ) {
+    $('.spinner').remove();
+  
+  
+		$('.filter-button-group').on( 'click', 'button', function() {
+			var filterValue = $(this).attr('data-filter');
+			$('.grid').isotope({ filter: filterValue });
+			});
+
+			var $grid = $('.grid');
+			$grid.isotope({
+			itemSelector: '.grid-item',
+			percentPosition: true,
+			masonry: {
+			columnWidth: '.grid-sizer'
+			 }
+			});
+				$('.filter-button-group').on( 'click', 'button', function() {
+				var filterValue = $(this).attr('data-filter');
+				$grid.isotope({ filter: filterValue });
+				if ($(this).hasClass('active')){
+				
+				}
+				else{
+					$('.filter-button-group').find('.active').removeClass('active');
+					$(this).addClass('active')
+					
+				}
+			});
+			$('.js-tilt').tilt({
+				 
+			})
+})
+		 });
+  </script>
+  
+    
+  <script>
+		$(document).ready(function () {
+		
+		 
+				//	$(document).on("scroll", onScroll);
+				
+				//smoothscroll
+				$('nav ul li a[href^="#"]').on('click', function (e) {
+					e.preventDefault();
+					$(document).off("scroll");
+					
+					$('nav ul li a').each(function () {
+						$(this).removeClass('active');
+					})
+					$(this).addClass('active');
+				  
+					var target = this.hash,
+						menu = target;
+					$target = $(target);
+					$('html, body').stop().animate({
+						'scrollTop': $target.offset().top+2
+					}, 500, 'swing', function () {
+						window.location.hash = target;
+						$(document).on("scroll", onScroll);
+					});
+				});
+			});
+
+			function onScroll(event){
+				var scrollPos = $(document).scrollTop();
+				$('nav ul li a').each(function () {
+					var currLink = $(this);
+					var refElement = $(currLink.attr("href"));
+					if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
+						$('nav ul li a').removeClass("active");
+						currLink.addClass("active");
+					}
+					else{
+						currLink.removeClass("active");
+					}
+				});
+			
+			 
+			
+			}
+  </script>
+  
+</body>
+
+</html>
